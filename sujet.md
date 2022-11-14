@@ -6,7 +6,7 @@ Some of the exercises in this practical session use PMD, JavaParser or require a
 
 To obtain and use PMD, consult the instructions given in https://pmd.github.io/pmd/pmd_userdocs_installation.html
 
-The folder [javaparser-starter](code/javaparser-starter) containsthe code of an application that uses JavaParser to print all public classes and public methods from a given project. You can use this example as a starting point for all exercises using JavaParser.
+The folder [javaparser-starter](code/javaparser-starter) contains the code of an application that uses JavaParser to print all public classes and public methods from a given project. You can use this example as a starting point for all exercises using JavaParser.
 
 We recommend you use the following projects as input for the exercises:
 
