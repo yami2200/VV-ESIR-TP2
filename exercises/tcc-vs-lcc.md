@@ -10,9 +10,9 @@ Soit :
 
 NP = N*(N-1)/2 avec N le nombre de méthodes
 
-NDC = Le nombre de connections directes
+NDC = Le nombre de connections directes (appels directs d'une classe/méthode)
 
-NIC = Le nombre de connections indirectes
+NIC = Le nombre de connections indirectes (appels d'une classe/méthode via une autre classe/méthode)
 
 TCC = NDC/NP
 LCC = (NDC + NIC)/NP
