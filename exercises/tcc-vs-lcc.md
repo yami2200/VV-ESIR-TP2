@@ -21,7 +21,7 @@ Il faut donc que NIC = 0, donc qu'il n'y ait pas de connections indirectes dans 
 
 Cet exemple illustre cette propriété :
 
-    public class Main {
+    public class code.Exercise4.Main {
     String variable = "";
     
         public void method1() {
