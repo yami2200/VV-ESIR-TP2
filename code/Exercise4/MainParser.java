@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 public class MainParser {
@@ -35,6 +36,12 @@ public class MainParser {
             return SourceRoot.Callback.Result.DONT_SAVE;
         });
 
-
+        Set<String> getVariables = printer.getGetVariables();
+        Set<Variable> privateVariables = printer.getPrivateVariables();
+        for(Variable v : privateVariables) {
+            if(!getVariables.contains(v.getNom())) {
+                System.out.println(v);
+            }
+        }
     }
 }
