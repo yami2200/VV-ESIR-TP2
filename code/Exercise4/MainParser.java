@@ -5,9 +5,12 @@ import com.github.javaparser.ParserConfiguration;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.javaparser.ast.body.MethodDeclaration;
 import com.github.javaparser.utils.SourceRoot;
+import com.opencsv.CSVWriter;
 
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Set;
@@ -38,10 +41,34 @@ public class MainParser {
 
         Set<String> getVariables = printer.getGetVariables();
         Set<Variable> privateVariables = printer.getPrivateVariables();
+        List<Variable> variablesSansGet = new ArrayList<>();
         for(Variable v : privateVariables) {
             if(!getVariables.contains(v.getNom())) {
-                System.out.println(v);
+                variablesSansGet.add(v);
             }
+        }
+
+        File file_export = new File("/home/pataubeur/IdeaProjects/VV-ESIR-TP2/code/Exercise4/export.csv");
+        try {
+        // create FileWriter object with file as parameter
+        FileWriter outputfile = new FileWriter(file_export);
+
+        // create CSVWriter object filewriter object as parameter
+        CSVWriter writer = new CSVWriter(outputfile);
+
+        // adding header to csv
+        String[] header = {"Nom", "Classe", "Paquet"};
+        writer.writeNext(header);
+
+        for(Variable v : variablesSansGet) {
+            String[] data = {v.getNom(), v.getClasse(), v.getPaquetage()};
+            writer.writeNext(data);
+        }
+
+        writer.close();
+        }
+        catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
