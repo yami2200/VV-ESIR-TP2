@@ -9,7 +9,7 @@
         Rules for VV TP2 Exercise2
     </description>
 
-    <rule ref="category/java/codestyle.xml"> </rule>
+    <rule ref="category/java/errorprone.xml/CompareObjectsWithEquals" />
     <rule ref="category/java/performance.xml/AppendCharacterWithChar"> </rule>
 
 
