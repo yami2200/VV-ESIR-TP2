@@ -57,6 +57,9 @@ public class Main {
         createTXTReport(file.getAbsoluteFile());
     }
 
+    /**
+     * Generate histogram of TCC of all classes
+     */
     public static void createHistogram(){
         // Create histogram of the number of methods per class with JFreeChart
         final DefaultCategoryDataset dataset = new DefaultCategoryDataset();
@@ -85,6 +88,9 @@ public class Main {
         }
     }
 
+    /**
+     * Generate dependency graph for each class
+     */
     public static void generateGraphs(){
         for(ClassInfo classInfo : TCC.classes){
             String graph = "digraph G {\n";
@@ -115,6 +121,10 @@ public class Main {
 
     }
 
+    /**
+     * Create a TXT report of the TCC analysis
+     * @param path the path to the source code
+     */
     public static void createTXTReport(File path){
         String text = "# Report TCC\nPath = "+path.getAbsolutePath()+"\n\n";
         text += "> \n" +
@@ -136,8 +146,4 @@ public class Main {
             System.exit(0);
         }
     }
-
-
-
-
 }

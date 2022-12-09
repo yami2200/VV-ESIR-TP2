@@ -22,15 +22,22 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
         }
     }
 
+    /**
+     * This method is called when a class is visited
+     * @param declaration Class declaration
+     * @param arg Void
+     */
     @Override
     public void visit(ClassOrInterfaceDeclaration declaration, Void arg) {
         if(!declaration.getFullyQualifiedName().isPresent()) return;
 
+        // Create class information object
         ClassInfo classInfo = new ClassInfo(declaration.getFullyQualifiedName().get());
         classes.add(classInfo);
 
         List<FieldDeclaration> fields = declaration.getFields();
 
+        // get all attributes of the class
         for (FieldDeclaration field : fields) {
             HashSet<String> found = new HashSet<>();
             field.getVariables().forEach(variable -> {
@@ -41,6 +48,7 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
             });
         }
 
+        // get all methods of the class
         for (MethodDeclaration method : declaration.getMethods()) {
             if(method.isPublic()) {
                 MethodInfo methodInfo = new MethodInfo(method.getNameAsString(), classInfo, method.isPublic());
@@ -68,6 +76,7 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
             }
         }
 
+        // process TCC
         int N = (int) classInfo.methods.values().stream().filter(methodInfo -> methodInfo.isPublic).count();
         double NP = N*(N-1.0)/2.0;
 
@@ -76,7 +85,11 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
         classInfo.connections = getDirectConnections(classInfo);
     }
 
-    public void processUndirectVariablesUsages(ClassInfo classInfo){
+    /**
+     * Add to each method the variables used by methods called by this method (deep search)
+     * @param classInfo the class to process
+     */
+    private void processUndirectVariablesUsages(ClassInfo classInfo){
         for (MethodInfo methodInfo : classInfo.methods.values()) {
             for (String methodCall : methodInfo.methodsCall) {
                 if(classInfo.methods.containsKey(methodCall)){
@@ -91,7 +104,14 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
         }
     }
 
-    public void addAllVariablesUsageRecur(ClassInfo classInfo, MethodInfo method, MethodInfo currentMethod, HashSet<MethodInfo> visited){
+    /**
+     * Add to the method the variables used by the currentmethod and the methods called by the currentmethod (deep search)
+     * @param classInfo class to process
+     * @param method add variables usages found, to this method
+     * @param currentMethod current method to process
+     * @param visited list of already visited methods
+     */
+    private void addAllVariablesUsageRecur(ClassInfo classInfo, MethodInfo method, MethodInfo currentMethod, HashSet<MethodInfo> visited){
         method.variablesUsage.addAll(currentMethod.variablesUsage);
 
         for (String methodCall : currentMethod.methodsCall) {
@@ -103,7 +123,12 @@ public class TCC extends VoidVisitorWithDefaults<Void> {
         }
     }
 
-    public int getDirectConnections(ClassInfo classInfo){
+    /**
+     * Get the direct connections between methods with attributes usage
+     * @param classInfo the class to process
+     * @return the direct connections
+     */
+    private int getDirectConnections(ClassInfo classInfo){
         int connections = 0;
         List<MethodInfo> methods = new ArrayList<>(classInfo.methods.values());
         for (int i = 0; i < methods.size(); i++) {
