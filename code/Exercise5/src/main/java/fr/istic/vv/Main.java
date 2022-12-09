@@ -1,11 +1,5 @@
 package fr.istic.vv;
 
-import com.github.javaparser.Problem;
-import com.github.javaparser.ast.CompilationUnit;
-import com.github.javaparser.ast.body.ClassOrInterfaceDeclaration;
-import com.github.javaparser.ast.body.MethodDeclaration;
-import com.github.javaparser.ast.visitor.VoidVisitor;
-import com.github.javaparser.ast.visitor.VoidVisitorAdapter;
 import com.github.javaparser.utils.SourceRoot;
 import org.jfree.chart.ChartFactory;
 import org.jfree.chart.ChartUtils;
@@ -94,9 +88,9 @@ public class Main {
     public static void generateGraphs(){
         for(ClassInfo classInfo : TCC.classes){
             String graph = "digraph G {\n";
-            /*for(MethodInfo methodInfo : classInfo.methods){
-                graph+=methodInfo.name+";\n";
-            }*/
+            for(MethodInfo methodInfo : classInfo.methods.values()){
+                if(methodInfo.isPublic) graph+=methodInfo.name+";\n";
+            }
             for (String method1 : classInfo.directedConnectedMethods.keySet()) {
                 for (String method2 : classInfo.directedConnectedMethods.get(method1).keySet()) {
                     String label =" [label=\" " ;
@@ -126,7 +120,7 @@ public class Main {
      * @param path the path to the source code
      */
     public static void createTXTReport(File path){
-        String text = "# Report TCC\nPath = "+path.getAbsolutePath()+"\n\n";
+        String text = "# Report TCC\n## Path = "+path.getAbsolutePath()+"\n\n";
         text += "> \n" +
                 "> Histogram :\n" +
                 "> \n" +

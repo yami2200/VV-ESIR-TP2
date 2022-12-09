@@ -9,3 +9,23 @@ Ignore inherited members to compute TCC of a class.
 Include in this repository the code of your application. Remove all unnecessary files like compiled binaries. Do include the reports and plots you obtained from different projects. See the [instructions](../sujet.md) for suggestions on the projects to use.
 
 You may use [javaparser-starter](../code/javaparser-starter) as a starting point.
+
+# Answer
+
+On a calculé les TCC selon ces formules :
+
+NP = N * (N-1)/2  (Avec N le nombre de méthodes de la classe)
+
+DC = direct connections
+
+TCC = DC/NP
+
+En utilisant les explications de ce site : https://www.aivosto.com/project/help/pm-oo-cohesion.html.
+
+
+## All reports made with the application :
+
+- [CLI](./../code/Exercise5/report/Cli/report.md)
+- [Collections](./../code/Exercise5/report/Collections/report.md)
+- [Lang](./../code/Exercise5/report/Lang/report.md)
+- [Maths](./../code/Exercise5/report/Maths/report.md)
