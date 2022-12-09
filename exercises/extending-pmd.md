@@ -23,7 +23,7 @@ Use your rule with different projects and describe you findings below. See the [
 
 ## Answer
 
-Comme l'exercice précédent, on créer un ruleset pmd que l'on va executer sur nos projets de tests. On a utilisé pmd designer pour créer une rule qui détecte les ifstatement imbriqués en formant un empilement de 3 ou plus.
+Comme l'exercice précédent, on crée un ruleset pmd que l'on va exécuter sur nos projets de tests. On a utilisé pmd designer pour créer une rule qui détecte les ifstatement imbriqués en formant un empilement de 3 ou plus.
 
 ### Lang :
 
@@ -65,7 +65,7 @@ On a donc trouvé des ifStatement imbriqués dans toutes ces différentes classe
 | commons/lang3/SystemUtilsTest                       |
 | commons/lang3/ArrayUtilsInsertTest                  |
 
-Comme on peut le voir, cette utilisation de if imbriqués restent quand meme assez présentes, dans la plupars des cas il s'agit souvent d'une utilisation excessive de elseif.
+Comme on peut le voir, cette utilisation de if imbriqués reste quand même assez présente, dans la plupart des cas il s'agit souvent d'une utilisation excessive de elseif.
 
 ### Math :
 
@@ -78,5 +78,5 @@ Comme on peut le voir, cette utilisation de if imbriqués restent quand meme ass
 | commons/math4/transform/FastSineTransformerTest   |
 | commons/math4/userguide/genetics/Polygon          |
 
-Pour le cas du projet Apach Maths, on trouve beaucoup moins de cas d'if imbriqués, mais on en trouve quand meme quelques uns.
-En revanche, le repository d'apache maths contient du code legacy qui lui comprends beaucoup plus de ces cas. Néanmoins, on peut ne pas tenir compte car par définition le code legacy est un code ancien qui n'est pas forcément propre.
+Pour le cas du projet Apache Maths, on trouve beaucoup moins de cas d'if imbriqués, mais on en trouve quand même quelques-uns.
+En revanche, le repository d'Apache maths contient du code Legay qui lui comprends beaucoup plus de ces cas. Néanmoins, on peut ne pas en tenir compte, car par définition, le code Legay est un code ancien qui n'est pas forcément propre.

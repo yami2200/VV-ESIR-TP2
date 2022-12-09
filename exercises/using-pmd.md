@@ -41,4 +41,4 @@ PMD a trouvé une erreur "CompareObjectsWithEquals" à la ligne commons-lang-mas
 ```
 
 L'erreur détectée n'en est pas vraiment une étant donné que l'utilisation de l'opérateur "==" au lieu de .equals() est souhaité dans cette situation.
-L'erreur soulevée par PMD vise à éviter d'utiliser par mégarde l'opérateur == entre deux objets (qui comparent leur adresse de référence et non pas leur valeur). Or dans cet exemple, on souhaite d'abord vérifier si nous avons affaire aux deux mêmes instances, puis on finit à la dernière ligne par utiliser le .equals().
+L'erreur soulevée par PMD vise à éviter d'utiliser par mégarde l'opérateur == entre deux objets (qui comparent leur adresse de référence et non pas leur valeur). Or, dans cet exemple, on souhaite d'abord vérifier si nous avons affaire aux deux mêmes instances, puis on finit à la dernière ligne par utiliser le .equals().

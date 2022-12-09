@@ -10,14 +10,14 @@ Soit :
 
 NP = N*(N-1)/2 avec N le nombre de méthodes
 
-NDC = Le nombre de connections directes (appels directs d'une classe/méthode)
+NDC = Le nombre de connexions directes (appels directs d'une classe/méthode)
 
-NIC = Le nombre de connections indirectes (appels d'une classe/méthode via une autre classe/méthode)
+NIC = Le nombre de connexions indirectes (appels d'une classe/méthode via une autre classe/méthode)
 
 TCC = NDC/NP
 LCC = (NDC + NIC)/NP
 
-Il faut donc que NIC = 0, donc qu'il n'y ait pas de connections indirectes dans la classe.
+Il faut donc que NIC = 0, donc qu'il n'y ait pas de connexions indirectes dans la classe.
 
 Cet exemple illustre cette propriété :
 
@@ -43,6 +43,6 @@ Cet exemple illustre cette propriété :
 
 On n'a pas de liaison indirecte, on a donc TCC = LCC = 1/2.
 
-D'après les relations données ci-dessus, il est impossible que LCC < TCC car LCC = TCC + NIC/NP. 
+D'après les relations données ci-dessus, il est impossible que LCC < TCC, car LCC = TCC + NIC/NP.
 
-En effet, LCC < TCC <=> TCC + NIC/NP < TCC <=> NIC/NP < 0, ce qui est impossible car NIC et NP sont des nombres possitifs.
+En effet, LCC < TCC <=> TCC + NIC/NP < TCC <=> NIC/NP < 0, ce qui est impossible, car NIC et NP sont des nombres positifs.
