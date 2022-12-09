@@ -1,0 +1,4 @@
+digraph G {
+resizeImage;
+showExampleFrame;
+}

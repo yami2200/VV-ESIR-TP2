@@ -1,0 +1,20 @@
+digraph G {
+testTrim;
+testTrimToEmpty;
+testStripStart_StringString;
+testStripAccents_Korean;
+testStripEnd_StringString;
+testStripAccents;
+testTrimToNull;
+testStripAll;
+testStrip_String;
+testStripToNull_String;
+testStripToEmpty_String;
+testStrip_StringString;
+testTrim -> testTrimToEmpty [label=" FOO", dir=none];
+testTrim -> testTrimToNull [label=" FOO", dir=none];
+testTrim -> testStripAll [label=" FOO", dir=none];
+testTrimToEmpty -> testTrimToNull [label=" FOO", dir=none];
+testTrimToEmpty -> testStripAll [label=" FOO", dir=none];
+testTrimToNull -> testStripAll [label=" FOO", dir=none];
+}

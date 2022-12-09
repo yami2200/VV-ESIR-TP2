@@ -1,0 +1,25 @@
+digraph G {
+defaultIfNull;
+select;
+lazyList;
+selectRejected;
+subtract;
+transformedList;
+sum;
+union;
+predicatedList;
+getLast;
+hashCodeForList;
+emptyIfNull;
+unmodifiableList;
+removeAll;
+partition;
+getFirst;
+intersection;
+longestCommonSubsequence;
+synchronizedList;
+indexOf;
+fixedSizeList;
+isEqualList;
+retainAll;
+}

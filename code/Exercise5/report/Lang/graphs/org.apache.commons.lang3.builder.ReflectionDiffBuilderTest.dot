@@ -1,0 +1,8 @@
+digraph G {
+test_primitive_difference;
+test_array_difference;
+test_no_differences;
+test_transient_field_difference;
+test_no_differences_inheritance;
+test_difference_in_inherited_field;
+}

@@ -1,0 +1,7 @@
+digraph G {
+createPredicatedCollectionWithPredicate;
+addPass;
+addFail;
+addAllPass;
+createPredicatedCollectionWithNotNullPredicate;
+}

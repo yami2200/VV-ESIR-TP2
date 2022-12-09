@@ -1,0 +1,5 @@
+digraph G {
+createVerifyList;
+verifyPredicates;
+createVerifyList -> verifyPredicates [label=" mockPredicatesToVerify", dir=none];
+}

@@ -1,0 +1,15 @@
+digraph G {
+next;
+size;
+reset;
+hasNext;
+remove;
+next -> size [label=" collection", dir=none];
+next -> reset [label=" iterator, collection", dir=none];
+next -> hasNext [label=" collection", dir=none];
+next -> remove [label=" iterator", dir=none];
+size -> reset [label=" collection", dir=none];
+size -> hasNext [label=" collection", dir=none];
+reset -> hasNext [label=" collection", dir=none];
+reset -> remove [label=" iterator", dir=none];
+}

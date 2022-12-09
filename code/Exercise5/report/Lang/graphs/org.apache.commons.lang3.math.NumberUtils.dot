@@ -1,0 +1,23 @@
+digraph G {
+createLong;
+createDouble;
+toInt;
+compare;
+toScaledBigDecimal;
+toLong;
+max;
+toFloat;
+createNumber;
+toByte;
+createFloat;
+createBigDecimal;
+min;
+toDouble;
+isParsable;
+isNumber;
+isDigits;
+isCreatable;
+toShort;
+createInteger;
+createBigInteger;
+}

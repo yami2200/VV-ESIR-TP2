@@ -1,0 +1,25 @@
+digraph G {
+testCountMatches_char;
+testSubstringsBetween_StringStringString;
+testSubstringBefore_StringString;
+testLeft_String;
+testSubstringBetween_StringStringString;
+testRight_String;
+testSubstringBeforeLast_StringString;
+testSubstring_StringInt;
+testSubstringAfterLast_StringString;
+testSubstringAfterLast_StringInt;
+testSubstringBetween_StringString;
+testSubstringAfter_StringInt;
+testSubstring_StringIntInt;
+testCountMatches_String;
+testSubstringAfter_StringString;
+testMid_String;
+testSubstringBefore_StringInt;
+testSubstring_StringIntInt -> testMid_String [label=" FOO", dir=none];
+testLeft_String -> testSubstring_StringIntInt [label=" FOO", dir=none];
+testLeft_String -> testRight_String [label=" FOOBAR", dir=none];
+testLeft_String -> testMid_String [label=" FOO, FOOBAR", dir=none];
+testRight_String -> testMid_String [label=" BAR, FOOBAR", dir=none];
+testSubstring_StringInt -> testSubstring_StringIntInt [label=" SENTENCE", dir=none];
+}

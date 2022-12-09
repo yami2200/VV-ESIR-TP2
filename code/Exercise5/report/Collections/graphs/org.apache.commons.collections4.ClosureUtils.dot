@@ -1,0 +1,13 @@
+digraph G {
+nopClosure;
+switchClosure;
+chainedClosure;
+forClosure;
+invokerClosure;
+ifClosure;
+whileClosure;
+doWhileClosure;
+switchMapClosure;
+asClosure;
+exceptionClosure;
+}

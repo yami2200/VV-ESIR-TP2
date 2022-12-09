@@ -1,0 +1,36 @@
+digraph G {
+testListIteratorAdd;
+makeObject;
+testSet;
+testListIteratorSet;
+testSetUpwardsInList;
+testListSetByIndex;
+testListIterator;
+testCollectionIteratorRemove;
+getFullNonNullElements;
+testAdd;
+testCollections307;
+testSubListIsUnmodifiable;
+verify;
+testCollections304;
+testCollections701;
+testFactory;
+testCreateSetBasedOnList;
+testRetainAll;
+testUniqueListDoubleInsert;
+getCompatibilityVersion;
+testAddAll;
+testIntCollectionAddAll;
+testCollectionAddAll;
+testRetainAllWithInitialList;
+testUniqueListReInsert;
+testSetCollections444;
+testSetDownwardsInList;
+testSetInBiggerList;
+testListIteratorAdd -> testCollectionAddAll [label=" extraVerify", dir=none];
+testListIteratorAdd -> testCollectionIteratorRemove [label=" extraVerify", dir=none];
+testListIteratorAdd -> verify [label=" extraVerify", dir=none];
+testCollectionIteratorRemove -> testCollectionAddAll [label=" extraVerify", dir=none];
+testCollectionIteratorRemove -> verify [label=" extraVerify", dir=none];
+verify -> testCollectionAddAll [label=" extraVerify", dir=none];
+}

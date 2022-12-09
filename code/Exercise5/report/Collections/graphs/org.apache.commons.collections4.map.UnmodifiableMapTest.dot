@@ -1,0 +1,10 @@
+digraph G {
+isRemoveSupported;
+makeObject;
+isPutChangeSupported;
+isPutAddSupported;
+testDecorateFactory;
+getCompatibilityVersion;
+makeFullMap;
+testUnmodifiable;
+}

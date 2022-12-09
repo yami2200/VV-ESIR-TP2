@@ -1,0 +1,8 @@
+digraph G {
+suite;
+makeObject;
+testNewStack;
+getCompatibilityVersion;
+testSearch;
+testPushPeekPop;
+}

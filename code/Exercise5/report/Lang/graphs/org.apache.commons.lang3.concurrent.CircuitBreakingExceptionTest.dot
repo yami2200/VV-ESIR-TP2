@@ -1,0 +1,9 @@
+digraph G {
+testThrowingExceptionWithCause;
+testWithoutMessage;
+testWithCauseAndMessage;
+testWithoutCause;
+testThrowingExceptionWithMessage;
+testThrowingInformativeException;
+testThrowingEmptyException;
+}

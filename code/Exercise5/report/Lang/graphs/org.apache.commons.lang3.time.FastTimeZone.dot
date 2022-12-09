@@ -1,0 +1,5 @@
+digraph G {
+getTimeZone;
+getGmtTimeZone;
+getTimeZone -> getGmtTimeZone [label=" GREENWICH, GMT_PATTERN", dir=none];
+}

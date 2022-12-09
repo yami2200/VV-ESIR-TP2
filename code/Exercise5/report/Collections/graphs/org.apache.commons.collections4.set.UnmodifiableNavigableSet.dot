@@ -1,0 +1,18 @@
+digraph G {
+add;
+tailSet;
+headSet;
+clear;
+descendingIterator;
+descendingSet;
+pollLast;
+remove;
+removeIf;
+iterator;
+removeAll;
+addAll;
+subSet;
+pollFirst;
+unmodifiableNavigableSet;
+retainAll;
+}

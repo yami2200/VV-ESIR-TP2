@@ -1,0 +1,16 @@
+digraph G {
+inverseBidiMap;
+entrySet;
+values;
+subMap;
+clear;
+put;
+remove;
+mapIterator;
+unmodifiableSortedBidiMap;
+removeValue;
+putAll;
+headMap;
+keySet;
+tailMap;
+}

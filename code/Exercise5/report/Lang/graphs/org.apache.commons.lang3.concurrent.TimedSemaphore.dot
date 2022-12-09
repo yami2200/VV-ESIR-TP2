@@ -1,0 +1,19 @@
+digraph G {
+getLastAcquiresPerPeriod;
+getLimit;
+setLimit;
+tryAcquire;
+getAcquireCount;
+getAverageCallsPerPeriod;
+getAvailablePermits;
+getUnit;
+acquire;
+getPeriod;
+shutdown;
+isShutdown;
+getLimit -> setLimit [label=" limit", dir=none];
+getLimit -> getAvailablePermits [label=" limit", dir=none];
+setLimit -> getAvailablePermits [label=" limit", dir=none];
+getAcquireCount -> getAvailablePermits [label=" acquireCount", dir=none];
+shutdown -> isShutdown [label=" shutdown", dir=none];
+}

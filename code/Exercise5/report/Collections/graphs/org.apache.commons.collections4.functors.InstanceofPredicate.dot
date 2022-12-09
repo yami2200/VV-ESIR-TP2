@@ -1,0 +1,6 @@
+digraph G {
+instanceOfPredicate;
+getType;
+evaluate;
+getType -> evaluate [label=" iType", dir=none];
+}

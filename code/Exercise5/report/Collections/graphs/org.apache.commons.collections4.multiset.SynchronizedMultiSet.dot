@@ -1,0 +1,11 @@
+digraph G {
+add;
+entrySet;
+synchronizedMultiSet;
+hashCode;
+equals;
+uniqueSet;
+getCount;
+remove;
+setCount;
+}

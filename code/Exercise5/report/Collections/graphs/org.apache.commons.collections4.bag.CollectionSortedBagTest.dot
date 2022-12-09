@@ -1,0 +1,11 @@
+digraph G {
+makeObject;
+getOtherNonNullElements;
+makeConfirmedCollection;
+getFullNonNullElements;
+getCompatibilityVersion;
+isNullSupported;
+testEmptyBagCompatibility;
+testFullBagCompatibility;
+makeConfirmedFullCollection;
+}

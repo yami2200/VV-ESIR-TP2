@@ -1,0 +1,32 @@
+digraph G {
+next;
+getKey;
+getValue;
+previous;
+unmodifiableOrderedMapIterator;
+setValue;
+hasPrevious;
+hasNext;
+remove;
+next -> getKey [label=" iterator", dir=none];
+next -> getValue [label=" iterator", dir=none];
+next -> previous [label=" iterator", dir=none];
+next -> unmodifiableOrderedMapIterator [label=" iterator", dir=none];
+next -> hasPrevious [label=" iterator", dir=none];
+next -> hasNext [label=" iterator", dir=none];
+getKey -> getValue [label=" iterator", dir=none];
+getKey -> previous [label=" iterator", dir=none];
+getKey -> unmodifiableOrderedMapIterator [label=" iterator", dir=none];
+getKey -> hasPrevious [label=" iterator", dir=none];
+getKey -> hasNext [label=" iterator", dir=none];
+getValue -> previous [label=" iterator", dir=none];
+getValue -> unmodifiableOrderedMapIterator [label=" iterator", dir=none];
+getValue -> hasPrevious [label=" iterator", dir=none];
+getValue -> hasNext [label=" iterator", dir=none];
+previous -> unmodifiableOrderedMapIterator [label=" iterator", dir=none];
+previous -> hasPrevious [label=" iterator", dir=none];
+previous -> hasNext [label=" iterator", dir=none];
+unmodifiableOrderedMapIterator -> hasPrevious [label=" iterator", dir=none];
+unmodifiableOrderedMapIterator -> hasNext [label=" iterator", dir=none];
+hasPrevious -> hasNext [label=" iterator", dir=none];
+}

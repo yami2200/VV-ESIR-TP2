@@ -1,0 +1,11 @@
+digraph G {
+testEmptyIterator;
+makeObject;
+testRemove;
+supportsRemove;
+verify;
+makeEmptyIterator;
+supportsEmptyIterator;
+testFullIterator;
+supportsFullIterator;
+}

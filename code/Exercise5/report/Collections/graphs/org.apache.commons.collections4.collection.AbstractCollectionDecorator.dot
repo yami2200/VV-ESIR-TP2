@@ -1,0 +1,16 @@
+digraph G {
+add;
+containsAll;
+clear;
+isEmpty;
+remove;
+removeIf;
+contains;
+iterator;
+removeAll;
+size;
+addAll;
+toArray;
+toString;
+retainAll;
+}

@@ -1,0 +1,8 @@
+digraph G {
+replacePattern;
+removeAll;
+removePattern;
+removeFirst;
+replaceFirst;
+replaceAll;
+}

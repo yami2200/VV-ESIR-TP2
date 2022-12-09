@@ -1,0 +1,17 @@
+digraph G {
+testMistakenArgument;
+testLackOfError;
+setUp;
+testBasic;
+testGetsDefaultIfOptional;
+testMistakenArgument -> testLackOfError [label=" parser, options", dir=none];
+testMistakenArgument -> setUp [label=" parser, options", dir=none];
+testMistakenArgument -> testBasic [label=" parser, options", dir=none];
+testMistakenArgument -> testGetsDefaultIfOptional [label=" parser, options", dir=none];
+testLackOfError -> setUp [label=" parser, options", dir=none];
+testLackOfError -> testBasic [label=" parser, options", dir=none];
+testLackOfError -> testGetsDefaultIfOptional [label=" parser, options", dir=none];
+setUp -> testBasic [label=" parser, options", dir=none];
+setUp -> testGetsDefaultIfOptional [label=" parser, options", dir=none];
+testBasic -> testGetsDefaultIfOptional [label=" parser, options", dir=none];
+}

@@ -1,0 +1,14 @@
+digraph G {
+add;
+tailSet;
+iterator;
+removeAll;
+addAll;
+headSet;
+clear;
+subSet;
+unmodifiableSortedSet;
+remove;
+removeIf;
+retainAll;
+}

@@ -1,0 +1,17 @@
+digraph G {
+toComparison;
+build;
+reflectionCompare;
+appendSuper;
+append;
+toComparison -> build [label=" comparison", dir=none];
+toComparison -> reflectionCompare [label=" comparison", dir=none];
+toComparison -> appendSuper [label=" comparison", dir=none];
+toComparison -> append [label=" comparison", dir=none];
+build -> reflectionCompare [label=" comparison", dir=none];
+build -> appendSuper [label=" comparison", dir=none];
+build -> append [label=" comparison", dir=none];
+reflectionCompare -> appendSuper [label=" comparison", dir=none];
+reflectionCompare -> append [label=" comparison", dir=none];
+appendSuper -> append [label=" comparison", dir=none];
+}

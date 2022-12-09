@@ -1,0 +1,5 @@
+digraph G {
+next;
+remove;
+next -> remove [label=" pos", dir=none];
+}

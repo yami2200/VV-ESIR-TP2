@@ -1,0 +1,14 @@
+digraph G {
+testMinimal;
+testExecution;
+setUp;
+testLength;
+testShadok;
+tearDown;
+testExecution -> setUp [label=" before, after", dir=none];
+testExecution -> testLength [label=" before, after", dir=none];
+testExecution -> tearDown [label=" before, after", dir=none];
+setUp -> testLength [label=" before, length, after", dir=none];
+setUp -> tearDown [label=" before, length, after", dir=none];
+testLength -> tearDown [label=" before, length, after", dir=none];
+}

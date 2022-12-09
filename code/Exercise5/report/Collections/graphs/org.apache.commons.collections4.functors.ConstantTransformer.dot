@@ -1,0 +1,15 @@
+digraph G {
+constantTransformer;
+transform;
+hashCode;
+equals;
+getConstant;
+nullTransformer;
+constantTransformer -> nullTransformer [label=" NULL_INSTANCE", dir=none];
+transform -> hashCode [label=" iConstant", dir=none];
+transform -> equals [label=" iConstant", dir=none];
+transform -> getConstant [label=" iConstant", dir=none];
+hashCode -> equals [label=" iConstant", dir=none];
+hashCode -> getConstant [label=" iConstant", dir=none];
+equals -> getConstant [label=" iConstant", dir=none];
+}

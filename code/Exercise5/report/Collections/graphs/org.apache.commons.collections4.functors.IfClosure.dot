@@ -1,0 +1,10 @@
+digraph G {
+getPredicate;
+ifClosure;
+execute;
+getTrueClosure;
+getFalseClosure;
+getPredicate -> execute [label=" iPredicate", dir=none];
+execute -> getTrueClosure [label=" iTrueClosure", dir=none];
+execute -> getFalseClosure [label=" iFalseClosure", dir=none];
+}

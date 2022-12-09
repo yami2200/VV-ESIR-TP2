@@ -1,0 +1,7 @@
+digraph G {
+testApply1ArgThrowsUnchecked;
+testConstructorForNull;
+testApply1Arg;
+testToString;
+testFullExample;
+}

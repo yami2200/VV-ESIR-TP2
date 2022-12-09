@@ -1,0 +1,18 @@
+digraph G {
+getUpToClass;
+setUpToClass;
+reflectionAppendArray;
+setAppendTransients;
+isAppendStatics;
+isExcludeNullValues;
+setExcludeNullValues;
+toStringExclude;
+setExcludeFieldNames;
+getExcludeFieldNames;
+setAppendStatics;
+getIncludeFieldNames;
+toStringInclude;
+toString;
+isAppendTransients;
+setIncludeFieldNames;
+}

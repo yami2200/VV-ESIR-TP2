@@ -1,0 +1,12 @@
+digraph G {
+getIterator;
+hasMoreElements;
+setIterator;
+nextElement;
+getIterator -> hasMoreElements [label=" iterator", dir=none];
+getIterator -> setIterator [label=" iterator", dir=none];
+getIterator -> nextElement [label=" iterator", dir=none];
+hasMoreElements -> setIterator [label=" iterator", dir=none];
+hasMoreElements -> nextElement [label=" iterator", dir=none];
+setIterator -> nextElement [label=" iterator", dir=none];
+}

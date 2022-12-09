@@ -1,0 +1,17 @@
+digraph G {
+testPrintHelpLongLines;
+setUp;
+testInfiniteLoop;
+testLongLineChunking;
+testLongLineChunkingIndentIgnored;
+testPrintHelpLongLines -> setUp [label=" sw, formatter", dir=none];
+testPrintHelpLongLines -> testInfiniteLoop [label=" sw, CR, formatter", dir=none];
+testPrintHelpLongLines -> testLongLineChunking [label=" sw, CR, formatter", dir=none];
+testPrintHelpLongLines -> testLongLineChunkingIndentIgnored [label=" sw, CR, formatter", dir=none];
+setUp -> testInfiniteLoop [label=" formatter, sw", dir=none];
+setUp -> testLongLineChunking [label=" formatter, sw", dir=none];
+setUp -> testLongLineChunkingIndentIgnored [label=" formatter, sw", dir=none];
+testInfiniteLoop -> testLongLineChunking [label=" formatter, sw, CR", dir=none];
+testInfiniteLoop -> testLongLineChunkingIndentIgnored [label=" formatter, sw, CR", dir=none];
+testLongLineChunking -> testLongLineChunkingIndentIgnored [label=" formatter, sw, CR", dir=none];
+}

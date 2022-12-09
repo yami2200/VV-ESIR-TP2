@@ -1,0 +1,10 @@
+digraph G {
+testIsNumeric;
+testIsAlphanumericSpace;
+testIsAsciiPrintable_String;
+testIsNumericSpace;
+testIsWhitespace;
+testIsAlpha;
+testIsAlphaspace;
+testIsAlphanumeric;
+}

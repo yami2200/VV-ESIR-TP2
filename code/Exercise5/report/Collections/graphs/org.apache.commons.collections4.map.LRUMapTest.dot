@@ -1,0 +1,24 @@
+digraph G {
+testRemoveLRU;
+testSynchronizedRemoveFromMapIterator;
+testSynchronizedRemoveFromEntrySet;
+makeObject;
+testSynchronizedRemoveFromValues;
+getCompatibilityVersion;
+testLRU;
+getMap;
+testAccessOrder2;
+testClone;
+suite;
+testCtors;
+isGetStructuralModify;
+testRemoveLRUFirstBlocksRemove;
+testReset;
+makeFullMap;
+testRemoveLRUBlocksRemoveScan;
+testAccessOrder;
+testRemoveLRUBlocksRemove;
+testInternalState_Buckets;
+testInternalState_getEntry_int;
+testSynchronizedRemoveFromKeySet;
+}

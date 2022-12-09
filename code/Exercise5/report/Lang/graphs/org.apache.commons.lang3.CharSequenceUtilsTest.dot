@@ -1,0 +1,10 @@
+digraph G {
+testLastIndexOfWithDifferentCharSequences;
+testNewLastIndexOf;
+testSubSequence;
+testSubSequenceTooLong;
+testSubSequenceNegativeStart;
+testRegionMatches;
+testConstructor;
+testToCharArray;
+}

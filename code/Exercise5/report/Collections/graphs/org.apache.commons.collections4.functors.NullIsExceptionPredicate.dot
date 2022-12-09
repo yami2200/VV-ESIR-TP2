@@ -1,0 +1,6 @@
+digraph G {
+nullIsExceptionPredicate;
+evaluate;
+getPredicates;
+evaluate -> getPredicates [label=" iPredicate", dir=none];
+}

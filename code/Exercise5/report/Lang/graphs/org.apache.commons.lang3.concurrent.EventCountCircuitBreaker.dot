@@ -1,0 +1,11 @@
+digraph G {
+incrementAndCheckState;
+getOpeningInterval;
+getClosingThreshold;
+checkState;
+getOpeningThreshold;
+getClosingInterval;
+close;
+open;
+close -> open [label=" checkIntervalData", dir=none];
+}

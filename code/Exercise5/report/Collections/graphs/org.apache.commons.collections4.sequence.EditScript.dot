@@ -1,0 +1,8 @@
+digraph G {
+getModifications;
+visit;
+append;
+getLCSLength;
+getModifications -> append [label=" modifications", dir=none];
+visit -> append [label=" commands", dir=none];
+}

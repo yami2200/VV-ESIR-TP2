@@ -1,0 +1,25 @@
+digraph G {
+add;
+next;
+set;
+previous;
+hasNext;
+getListIterator;
+nextIndex;
+remove;
+setPredicate;
+getPredicate;
+hasPrevious;
+previousIndex;
+setListIterator;
+next -> previous [label=" nextIndex", dir=none];
+next -> hasNext [label=" nextObjectSet", dir=none];
+next -> nextIndex [label=" nextIndex", dir=none];
+next -> previousIndex [label=" nextIndex", dir=none];
+setPredicate -> getPredicate [label=" predicate", dir=none];
+previous -> hasPrevious [label=" previousObjectSet", dir=none];
+previous -> nextIndex [label=" nextIndex", dir=none];
+previous -> previousIndex [label=" nextIndex", dir=none];
+getListIterator -> setListIterator [label=" iterator", dir=none];
+nextIndex -> previousIndex [label=" nextIndex", dir=none];
+}

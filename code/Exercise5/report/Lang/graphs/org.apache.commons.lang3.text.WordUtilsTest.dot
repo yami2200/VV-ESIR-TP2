@@ -1,0 +1,18 @@
+digraph G {
+testContainsAllWords_StringString;
+testCapitalizeWithDelimiters_String;
+testLANG1397;
+testUncapitalize_String;
+testWrap_StringInt;
+testSwapCase_String;
+testWrap_StringIntStringBoolean;
+testConstructor;
+testCapitalizeFully_String;
+testWrap_StringIntStringBooleanString;
+testCapitalize_String;
+testUncapitalizeWithDelimiters_String;
+testInitials_String_charArray;
+testInitials_String;
+testLANG1292;
+testCapitalizeFullyWithDelimiters_String;
+}

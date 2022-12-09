@@ -1,0 +1,11 @@
+digraph G {
+min;
+max;
+lt;
+le;
+is;
+gt;
+between;
+betweenExclusive;
+ge;
+}

@@ -1,0 +1,19 @@
+digraph G {
+add;
+subList;
+set;
+clear;
+maxSize;
+remove;
+removeIf;
+lastIndexOf;
+iterator;
+removeAll;
+addAll;
+get;
+listIterator;
+isFull;
+indexOf;
+fixedSizeList;
+retainAll;
+}

@@ -1,0 +1,9 @@
+digraph G {
+languagesByCountry;
+toLocale;
+availableLocaleList;
+availableLocaleSet;
+countriesByLanguage;
+localeLookupList;
+isAvailableLocale;
+}

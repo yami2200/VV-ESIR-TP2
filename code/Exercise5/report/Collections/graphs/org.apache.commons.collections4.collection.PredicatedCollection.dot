@@ -1,0 +1,8 @@
+digraph G {
+add;
+notNullBuilder;
+addAll;
+builder;
+predicatedCollection;
+builder -> predicatedCollection [label=" predicate", dir=none];
+}

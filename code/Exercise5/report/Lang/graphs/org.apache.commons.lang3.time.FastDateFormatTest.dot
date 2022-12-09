@@ -1,0 +1,21 @@
+digraph G {
+testCheckDefaults;
+test_getInstance_String;
+testLANG_1152;
+testLANG_954;
+test_getInstance_String_TimeZone_Locale;
+testStandaloneLongMonthForm;
+testCheckDifferingStyles;
+testLANG_1267;
+testTimeDateDefaults;
+testTimeDefaults;
+testStandaloneShortMonthForm;
+testDateDefaults;
+test_changeDefault_Locale_DateTimeInstance;
+test_getInstance;
+test_getInstance_String_TimeZone;
+test_getInstance_String_Locale;
+testParseSync;
+test_changeDefault_Locale_DateInstance;
+testStandaloneLongMonthForm -> testStandaloneShortMonthForm [label=" HUNGARIAN, FINNISH", dir=none];
+}

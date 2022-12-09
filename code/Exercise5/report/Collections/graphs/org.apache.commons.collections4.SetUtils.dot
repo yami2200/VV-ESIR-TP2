@@ -1,0 +1,25 @@
+digraph G {
+emptySet;
+transformedSet;
+predicatedSortedSet;
+synchronizedSet;
+synchronizedSortedSet;
+disjunction;
+isEqualSet;
+predicatedNavigableSet;
+hashSet;
+union;
+emptyIfNull;
+newIdentityHashSet;
+unmodifiableSet;
+intersection;
+orderedSet;
+difference;
+emptySortedSet;
+transformedSortedSet;
+hashCodeForSet;
+predicatedSet;
+transformedNavigableSet;
+unmodifiableNavigableSet;
+unmodifiableSortedSet;
+}

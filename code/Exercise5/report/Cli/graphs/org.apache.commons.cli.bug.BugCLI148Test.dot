@@ -1,0 +1,8 @@
+digraph G {
+testWorkaround2;
+testWorkaround1;
+setUp;
+testWorkaround2 -> testWorkaround1 [label=" options", dir=none];
+testWorkaround2 -> setUp [label=" options", dir=none];
+testWorkaround1 -> setUp [label=" options", dir=none];
+}

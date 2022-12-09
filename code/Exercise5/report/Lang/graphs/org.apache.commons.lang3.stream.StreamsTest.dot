@@ -1,0 +1,22 @@
+digraph G {
+testNullSafeStreamNotNull;
+testStreamCollection;
+testInstanceOfStream;
+testOfCollectionNull;
+testSimpleStreamMap;
+testSimpleStreamMapFailing;
+testSimpleStreamForEach;
+testOfIterableNull;
+testOfEnumeration;
+testOfIteratorNotNull;
+testOfCollectionNotNull;
+testOfIteratorNull;
+testToArray;
+simpleStreamForEachFailing;
+testOfArray;
+testOfIterableNotNull;
+testStreamCollectionNull;
+simpleStreamFilterFailing;
+testNullSafeStreamNull;
+testSimpleStreamFilter;
+}

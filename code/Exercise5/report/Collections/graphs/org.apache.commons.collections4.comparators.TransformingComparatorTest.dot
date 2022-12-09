@@ -1,0 +1,6 @@
+digraph G {
+makeObject;
+getCompatibilityVersion;
+getComparableObjectsOrdered;
+testEquals;
+}

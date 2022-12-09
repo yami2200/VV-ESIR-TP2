@@ -1,0 +1,22 @@
+digraph G {
+containsMapping;
+containsKey;
+keys;
+asMap;
+removeMapping;
+values;
+isEmpty;
+clear;
+containsValue;
+remove;
+put;
+mapIterator;
+entries;
+size;
+hashCode;
+get;
+putAll;
+equals;
+toString;
+keySet;
+}

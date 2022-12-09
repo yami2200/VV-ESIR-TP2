@@ -1,0 +1,5 @@
+digraph G {
+testNumberOfInitializeInvocations;
+setUp;
+testNumberOfInitializeInvocations -> setUp [label=" initializer", dir=none];
+}

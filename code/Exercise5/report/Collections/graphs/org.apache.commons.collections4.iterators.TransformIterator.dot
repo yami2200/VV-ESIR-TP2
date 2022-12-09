@@ -1,0 +1,20 @@
+digraph G {
+next;
+getIterator;
+getTransformer;
+hasNext;
+setTransformer;
+remove;
+setIterator;
+next -> getIterator [label=" iterator", dir=none];
+next -> hasNext [label=" iterator", dir=none];
+next -> remove [label=" iterator", dir=none];
+next -> setIterator [label=" iterator", dir=none];
+getIterator -> hasNext [label=" iterator", dir=none];
+getIterator -> remove [label=" iterator", dir=none];
+getIterator -> setIterator [label=" iterator", dir=none];
+getTransformer -> setTransformer [label=" transformer", dir=none];
+hasNext -> remove [label=" iterator", dir=none];
+hasNext -> setIterator [label=" iterator", dir=none];
+remove -> setIterator [label=" iterator", dir=none];
+}

@@ -1,0 +1,23 @@
+digraph G {
+next;
+getKey;
+getValue;
+setValue;
+hasNext;
+remove;
+next -> getKey [label=" iterator", dir=none];
+next -> getValue [label=" iterator", dir=none];
+next -> setValue [label=" iterator", dir=none];
+next -> hasNext [label=" iterator", dir=none];
+next -> remove [label=" iterator", dir=none];
+getKey -> getValue [label=" iterator", dir=none];
+getKey -> setValue [label=" iterator", dir=none];
+getKey -> hasNext [label=" iterator", dir=none];
+getKey -> remove [label=" iterator", dir=none];
+getValue -> setValue [label=" iterator", dir=none];
+getValue -> hasNext [label=" iterator", dir=none];
+getValue -> remove [label=" iterator", dir=none];
+setValue -> hasNext [label=" iterator", dir=none];
+setValue -> remove [label=" iterator", dir=none];
+hasNext -> remove [label=" iterator", dir=none];
+}

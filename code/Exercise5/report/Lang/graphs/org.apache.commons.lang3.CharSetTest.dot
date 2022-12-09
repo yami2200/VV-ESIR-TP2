@@ -1,0 +1,17 @@
+digraph G {
+testGetInstance_Stringarray;
+testConstructor_String_oddDash;
+testContains_Char;
+testEquals_Object;
+testConstructor_String_simple;
+testSerialization;
+testHashCode;
+testConstructor_String_oddNegate;
+testConstructor_String_combo;
+testConstructor_String_comboNegated;
+testStatics;
+testGetInstance;
+testClass;
+testConstructor_String_oddCombinations;
+testJavadocExamples;
+}

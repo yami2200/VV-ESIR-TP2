@@ -1,0 +1,18 @@
+digraph G {
+testOlson;
+testHoursColonMinutes;
+testUTC;
+testGetGmtTimeZone;
+testZeroOffsetsReturnSingleton;
+testZ;
+testSign;
+testBareGmt;
+testGmtPrefix;
+testHoursMinutes;
+testHoursColonMinutes -> testSign [label=" HOURS_2, HOURS_23", dir=none];
+testHoursColonMinutes -> testGmtPrefix [label=" HOURS_23", dir=none];
+testHoursColonMinutes -> testHoursMinutes [label=" HOURS_2, HOURS_23, MINUTES_59, MINUTES_5", dir=none];
+testSign -> testGmtPrefix [label=" HOURS_23", dir=none];
+testSign -> testHoursMinutes [label=" HOURS_2, HOURS_23", dir=none];
+testGmtPrefix -> testHoursMinutes [label=" HOURS_23", dir=none];
+}

@@ -1,0 +1,15 @@
+digraph G {
+entrySet;
+containsKey;
+values;
+isEmpty;
+containsValue;
+remove;
+mapIterator;
+size;
+hashCode;
+get;
+equals;
+toString;
+keySet;
+}

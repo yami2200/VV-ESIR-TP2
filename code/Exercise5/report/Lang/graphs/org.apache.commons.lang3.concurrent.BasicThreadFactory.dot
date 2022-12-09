@@ -1,0 +1,10 @@
+digraph G {
+getDaemonFlag;
+newThread;
+getPriority;
+getWrappedFactory;
+getUncaughtExceptionHandler;
+getThreadCount;
+getNamingPattern;
+newThread -> getWrappedFactory [label=" wrappedFactory", dir=none];
+}

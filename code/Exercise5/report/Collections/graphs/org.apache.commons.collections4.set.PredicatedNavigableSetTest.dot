@@ -1,0 +1,11 @@
+digraph G {
+testGetSet;
+testComparator;
+testIllegalAdd;
+suite;
+makeFullCollection;
+makeObject;
+getCompatibilityVersion;
+testIllegalAddAll;
+makeFullCollection -> makeObject [label=" truePredicate", dir=none];
+}

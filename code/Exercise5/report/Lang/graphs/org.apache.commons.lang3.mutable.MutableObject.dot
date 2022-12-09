@@ -1,0 +1,10 @@
+digraph G {
+getValue;
+hashCode;
+setValue;
+equals;
+toString;
+hashCode -> setValue [label=" value", dir=none];
+hashCode -> toString [label=" value", dir=none];
+setValue -> toString [label=" value", dir=none];
+}

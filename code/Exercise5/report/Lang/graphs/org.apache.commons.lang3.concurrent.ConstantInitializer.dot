@@ -1,0 +1,17 @@
+digraph G {
+getObject;
+hashCode;
+get;
+equals;
+toString;
+getObject -> hashCode [label=" object", dir=none];
+getObject -> get [label=" object", dir=none];
+getObject -> equals [label=" object", dir=none];
+getObject -> toString [label=" object", dir=none];
+hashCode -> get [label=" object", dir=none];
+hashCode -> equals [label=" object", dir=none];
+hashCode -> toString [label=" object", dir=none];
+get -> equals [label=" object", dir=none];
+get -> toString [label=" object", dir=none];
+equals -> toString [label=" object", dir=none];
+}

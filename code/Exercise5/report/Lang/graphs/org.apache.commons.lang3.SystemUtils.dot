@@ -1,0 +1,13 @@
+digraph G {
+getJavaIoTmpDir;
+getUserHome;
+isJavaAwtHeadless;
+getHostName;
+getUserName;
+isJavaVersionAtLeast;
+getEnvironmentVariable;
+getUserDir;
+isJavaVersionAtMost;
+getJavaHome;
+isJavaVersionAtLeast -> isJavaVersionAtMost [label=" JAVA_SPECIFICATION_VERSION_AS_ENUM", dir=none];
+}

@@ -1,0 +1,7 @@
+digraph G {
+testMapIterator;
+testEmptyMap;
+testFullMap;
+testTransformedMap;
+testMapIterator -> testTransformedMap [label=" stringToInt", dir=none];
+}

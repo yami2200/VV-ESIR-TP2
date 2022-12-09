@@ -1,0 +1,9 @@
+digraph G {
+next;
+hasNext;
+remove;
+unmodifiableIterator;
+next -> hasNext [label=" iterator", dir=none];
+next -> unmodifiableIterator [label=" iterator", dir=none];
+hasNext -> unmodifiableIterator [label=" iterator", dir=none];
+}

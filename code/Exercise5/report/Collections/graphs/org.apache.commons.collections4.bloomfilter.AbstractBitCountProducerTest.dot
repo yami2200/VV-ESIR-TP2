@@ -1,0 +1,8 @@
+digraph G {
+testIndexConsistency;
+testEmptyBitCountProducer;
+testForEachCountEarlyExit;
+testBehaviourForEachCount;
+testForEachCountPredicates;
+testForEachCountValues;
+}

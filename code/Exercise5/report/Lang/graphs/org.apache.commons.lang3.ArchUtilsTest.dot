@@ -1,0 +1,14 @@
+digraph G {
+testIs32BitJVM;
+testIs64BitJVM;
+testArch;
+testTypeLabels;
+testArchLabels;
+testGetProcessor;
+testIs32BitJVM -> testIs64BitJVM [label=" PPC, IA64, X86, IA64_32, PPC64, X86_64", dir=none];
+testIs32BitJVM -> testArch [label=" PPC, IA64, X86, IA64_32, PPC64, X86_64", dir=none];
+testIs32BitJVM -> testGetProcessor [label=" X86", dir=none];
+testIs64BitJVM -> testArch [label=" PPC, IA64, X86, AARCH_64, IA64_32, PPC64, X86_64", dir=none];
+testIs64BitJVM -> testGetProcessor [label=" X86", dir=none];
+testArch -> testGetProcessor [label=" X86", dir=none];
+}

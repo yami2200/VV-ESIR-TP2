@@ -1,0 +1,8 @@
+digraph G {
+getCollection;
+suite;
+makeObject;
+compareSpeed;
+getCompatibilityVersion;
+testShrinkCache;
+}

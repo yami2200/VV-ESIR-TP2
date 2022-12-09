@@ -1,0 +1,17 @@
+digraph G {
+getTrueFirstComparator;
+compare;
+hashCode;
+booleanComparator;
+equals;
+sortsTrueFirst;
+getFalseFirstComparator;
+getTrueFirstComparator -> booleanComparator [label=" TRUE_FIRST", dir=none];
+compare -> hashCode [label=" trueFirst", dir=none];
+compare -> booleanComparator [label=" trueFirst", dir=none];
+compare -> sortsTrueFirst [label=" trueFirst", dir=none];
+hashCode -> booleanComparator [label=" trueFirst", dir=none];
+hashCode -> sortsTrueFirst [label=" trueFirst", dir=none];
+booleanComparator -> sortsTrueFirst [label=" trueFirst", dir=none];
+booleanComparator -> getFalseFirstComparator [label=" FALSE_FIRST", dir=none];
+}

@@ -1,0 +1,15 @@
+digraph G {
+entrySet;
+values;
+subMap;
+clear;
+maxSize;
+put;
+remove;
+putAll;
+headMap;
+isFull;
+fixedSizeSortedMap;
+keySet;
+tailMap;
+}

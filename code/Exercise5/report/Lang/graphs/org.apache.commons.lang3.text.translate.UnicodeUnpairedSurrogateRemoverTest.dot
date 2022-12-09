@@ -1,0 +1,5 @@
+digraph G {
+testInvalidCharacters;
+testValidCharacters;
+testInvalidCharacters -> testValidCharacters [label=" subject, writer", dir=none];
+}

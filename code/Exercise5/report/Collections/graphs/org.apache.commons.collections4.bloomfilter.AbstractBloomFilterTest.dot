@@ -1,0 +1,16 @@
+digraph G {
+testClear;
+testMerge;
+testEstimateUnion;
+testIsFull;
+testBitMapProducerSize;
+testEstimateN;
+testMergeWithHasher;
+testContains;
+testMergeWithBitMapProducer;
+testMergeWithBadHasher;
+testEstimateIntersection;
+testAsBitMapArray;
+testIndexProducerMerge;
+testMergeWithIndexProducer;
+}

@@ -1,0 +1,20 @@
+digraph G {
+size;
+entrySet;
+containsKey;
+get;
+putAll;
+values;
+clear;
+isEmpty;
+keySet;
+containsValue;
+put;
+remove;
+putAll -> clear [label=" expirationMap", dir=none];
+putAll -> put [label=" expiringPolicy, expirationMap", dir=none];
+putAll -> remove [label=" expirationMap", dir=none];
+clear -> put [label=" expirationMap", dir=none];
+clear -> remove [label=" expirationMap", dir=none];
+put -> remove [label=" expirationMap", dir=none];
+}

@@ -1,0 +1,26 @@
+digraph G {
+equalPredicate;
+nullIsExceptionPredicate;
+notNullPredicate;
+orPredicate;
+nullIsTruePredicate;
+neitherPredicate;
+instanceofPredicate;
+anyPredicate;
+eitherPredicate;
+identityPredicate;
+allPredicate;
+onePredicate;
+falsePredicate;
+invokerPredicate;
+exceptionPredicate;
+nullIsFalsePredicate;
+uniquePredicate;
+nonePredicate;
+transformedPredicate;
+notPredicate;
+truePredicate;
+asPredicate;
+nullPredicate;
+andPredicate;
+}

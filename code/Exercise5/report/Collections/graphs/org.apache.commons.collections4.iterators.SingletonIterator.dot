@@ -1,0 +1,12 @@
+digraph G {
+next;
+reset;
+hasNext;
+remove;
+next -> reset [label=" beforeFirst", dir=none];
+next -> hasNext [label=" removed, beforeFirst", dir=none];
+next -> remove [label=" removed, beforeFirst, object", dir=none];
+reset -> hasNext [label=" beforeFirst", dir=none];
+reset -> remove [label=" beforeFirst", dir=none];
+hasNext -> remove [label=" removed, beforeFirst", dir=none];
+}

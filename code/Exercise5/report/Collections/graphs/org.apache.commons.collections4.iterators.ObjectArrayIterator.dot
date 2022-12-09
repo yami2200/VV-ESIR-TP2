@@ -1,0 +1,9 @@
+digraph G {
+next;
+getStartIndex;
+getEndIndex;
+getArray;
+reset;
+hasNext;
+remove;
+}

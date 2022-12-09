@@ -1,0 +1,18 @@
+digraph G {
+instantiateFactorySimple;
+testPrototypeFactoryNull;
+testSingletonPatternInSerialization;
+testPrototypeFactoryPublicSerializationError;
+testPrototypeFactoryPublicBad;
+testConstantFactoryNull;
+testPrototypeFactoryPublicSerialization;
+testExceptionFactory;
+instantiateFactoryNoConstructor;
+testConstantFactoryConstant;
+testPrototypeFactoryPublicCopyConstructor;
+instantiateFactoryMismatch;
+testNullFactory;
+instantiateFactoryComplex;
+instantiateFactoryNull;
+testPrototypeFactoryPublicCloneMethod;
+}

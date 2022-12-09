@@ -1,0 +1,36 @@
+digraph G {
+testGetRawType;
+testIsAssignable;
+testIsAssignableGenericArrayTypeToObject;
+testLANG1348;
+testContainsTypeVariables;
+testParameterizeWithOwner;
+testGetArrayComponentType;
+testToStringLang1311;
+stub3;
+testToLongString;
+stub2;
+dummyMethod;
+testGetPrimitiveArrayComponentType;
+testUnboundedWildcardType;
+testIsAssignableGenericArrayTypeToWildercardType;
+testLANG1190;
+testGetTypeArguments;
+stub;
+testParameterize;
+testWrap;
+delegateBooleanAssertion;
+testLang1114;
+testDetermineTypeVariableAssignments;
+testLang820;
+testLowerBoundedWildcardType;
+testParameterizeNarrowerTypeArray;
+testGenericArrayType;
+testIsArrayGenericTypes;
+testIsArrayTypeClasses;
+testIsInstance;
+testIsAssignableGenericArrayTypeToParameterizedType;
+testTypesSatisfyVariables;
+testWildcardType;
+testIsAssignable -> testIsInstance [label=" intComparable", dir=none];
+}

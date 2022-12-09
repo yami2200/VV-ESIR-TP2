@@ -1,0 +1,34 @@
+digraph G {
+next;
+getKey;
+getValue;
+setValue;
+reset;
+hasNext;
+toString;
+remove;
+next -> getKey [label=" last", dir=none];
+next -> getValue [label=" last", dir=none];
+next -> setValue [label=" last", dir=none];
+next -> reset [label=" iterator, canRemove, last", dir=none];
+next -> hasNext [label=" iterator", dir=none];
+next -> toString [label=" last", dir=none];
+next -> remove [label=" iterator, canRemove, last", dir=none];
+getKey -> getValue [label=" last", dir=none];
+getKey -> setValue [label=" last", dir=none];
+getKey -> reset [label=" last", dir=none];
+getKey -> toString [label=" last", dir=none];
+getKey -> remove [label=" last", dir=none];
+getValue -> setValue [label=" last", dir=none];
+getValue -> reset [label=" last", dir=none];
+getValue -> toString [label=" last", dir=none];
+getValue -> remove [label=" last", dir=none];
+setValue -> reset [label=" last", dir=none];
+setValue -> toString [label=" last", dir=none];
+setValue -> remove [label=" last", dir=none];
+reset -> hasNext [label=" iterator", dir=none];
+reset -> toString [label=" last", dir=none];
+reset -> remove [label=" iterator, canRemove, last", dir=none];
+hasNext -> remove [label=" iterator", dir=none];
+toString -> remove [label=" last", dir=none];
+}

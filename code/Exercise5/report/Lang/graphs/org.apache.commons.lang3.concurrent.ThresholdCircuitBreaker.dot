@@ -1,0 +1,7 @@
+digraph G {
+incrementAndCheckState;
+checkState;
+getThreshold;
+close;
+incrementAndCheckState -> getThreshold [label=" threshold", dir=none];
+}

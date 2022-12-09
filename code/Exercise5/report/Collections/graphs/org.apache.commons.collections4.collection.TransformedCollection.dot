@@ -1,0 +1,7 @@
+digraph G {
+add;
+transformingCollection;
+addAll;
+transformedCollection;
+transformingCollection -> transformedCollection [label=" transformer", dir=none];
+}

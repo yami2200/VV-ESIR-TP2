@@ -1,0 +1,27 @@
+digraph G {
+getRight;
+setMiddle;
+setLeft;
+getMiddle;
+of;
+setRight;
+ofNonNull;
+emptyArray;
+getLeft;
+getRight -> of [label=" right", dir=none];
+getRight -> setRight [label=" right", dir=none];
+getRight -> ofNonNull [label=" right", dir=none];
+setMiddle -> getMiddle [label=" middle", dir=none];
+setMiddle -> of [label=" middle", dir=none];
+setMiddle -> ofNonNull [label=" middle", dir=none];
+setLeft -> of [label=" left", dir=none];
+setLeft -> ofNonNull [label=" left", dir=none];
+setLeft -> getLeft [label=" left", dir=none];
+getMiddle -> of [label=" middle", dir=none];
+getMiddle -> ofNonNull [label=" middle", dir=none];
+of -> setRight [label=" right", dir=none];
+of -> ofNonNull [label=" middle, left, right", dir=none];
+of -> getLeft [label=" left", dir=none];
+setRight -> ofNonNull [label=" right", dir=none];
+ofNonNull -> getLeft [label=" left", dir=none];
+}

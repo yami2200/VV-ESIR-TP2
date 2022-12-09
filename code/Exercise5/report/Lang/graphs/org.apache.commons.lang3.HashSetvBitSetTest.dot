@@ -1,0 +1,7 @@
+digraph G {
+timeBitSetRemoveAll;
+testBitSet;
+timeExtractRemoveAll;
+testHashSet;
+testBitSet -> testHashSet [label=" numberOfElementsToCompute", dir=none];
+}

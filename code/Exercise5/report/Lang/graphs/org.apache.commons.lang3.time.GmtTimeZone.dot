@@ -1,0 +1,24 @@
+digraph G {
+hashCode;
+equals;
+getOffset;
+setRawOffset;
+useDaylightTime;
+getID;
+toString;
+inDaylightTime;
+getRawOffset;
+hashCode -> equals [label=" offset, zoneId", dir=none];
+hashCode -> getOffset [label=" offset", dir=none];
+hashCode -> getID [label=" zoneId", dir=none];
+hashCode -> toString [label=" offset, zoneId", dir=none];
+hashCode -> getRawOffset [label=" offset", dir=none];
+equals -> getOffset [label=" offset", dir=none];
+equals -> getID [label=" zoneId", dir=none];
+equals -> toString [label=" offset, zoneId", dir=none];
+equals -> getRawOffset [label=" offset", dir=none];
+getOffset -> toString [label=" offset", dir=none];
+getOffset -> getRawOffset [label=" offset", dir=none];
+getID -> toString [label=" zoneId", dir=none];
+toString -> getRawOffset [label=" offset", dir=none];
+}

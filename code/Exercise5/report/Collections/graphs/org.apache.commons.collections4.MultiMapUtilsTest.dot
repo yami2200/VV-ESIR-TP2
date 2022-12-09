@@ -1,0 +1,12 @@
+digraph G {
+testEmptyUnmodifiableMultiValuedMap;
+testGetValuesAsBag;
+testGetValuesAsList;
+testGetCollection;
+testIsEmptyWithNull;
+testGetValuesAsSet;
+testTypeSafeEmptyMultiValuedMap;
+testIsEmptyWithNonEmptyMap;
+testIsEmptyWithEmptyMap;
+testEmptyIfNull;
+}

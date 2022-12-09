@@ -1,0 +1,11 @@
+digraph G {
+mapIterator;
+unmodifiableOrderedMap;
+entrySet;
+putAll;
+values;
+clear;
+keySet;
+put;
+remove;
+}

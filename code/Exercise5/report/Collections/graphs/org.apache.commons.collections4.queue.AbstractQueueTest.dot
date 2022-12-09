@@ -1,0 +1,18 @@
+digraph G {
+testQueuePeek;
+testQueueRemove;
+getCollection;
+testFullQueueCompatibility;
+makeFullCollection;
+testQueuePoll;
+makeObject;
+isSetSupported;
+testQueueOffer;
+makeConfirmedCollection;
+testQueueElement;
+testEmptyQueueSerialization;
+testFullQueueSerialization;
+verify;
+makeConfirmedFullCollection;
+testEmptyQueueCompatibility;
+}

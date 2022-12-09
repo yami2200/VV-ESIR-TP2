@@ -1,0 +1,16 @@
+digraph G {
+toPattern;
+setFormat;
+hashCode;
+setFormats;
+equals;
+setFormatsByArgumentIndex;
+setFormatByArgumentIndex;
+applyPattern;
+toPattern -> hashCode [label=" toPattern", dir=none];
+toPattern -> equals [label=" toPattern", dir=none];
+toPattern -> applyPattern [label=" toPattern", dir=none];
+hashCode -> equals [label=" registry, toPattern", dir=none];
+hashCode -> applyPattern [label=" registry, toPattern", dir=none];
+equals -> applyPattern [label=" registry, toPattern", dir=none];
+}

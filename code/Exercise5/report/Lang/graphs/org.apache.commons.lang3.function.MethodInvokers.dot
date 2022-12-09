@@ -1,0 +1,11 @@
+digraph G {
+asBiConsumer;
+asFailableSupplier;
+asFunction;
+asFailableBiFunction;
+asFailableBiConsumer;
+asSupplier;
+asBiFunction;
+asFailableFunction;
+asInterfaceInstance;
+}

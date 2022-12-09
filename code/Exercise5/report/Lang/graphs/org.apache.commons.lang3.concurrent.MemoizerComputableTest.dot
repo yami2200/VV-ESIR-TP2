@@ -1,0 +1,30 @@
+digraph G {
+testDoesNotRecalculateWhenSetToFalse;
+testDefaultBehaviourNotToRecalculateExecutionExceptions;
+testOnlyCallComputableOnceIfDoesNotThrowException;
+setUpComputableMock;
+testDoesRecalculateWhenSetToTrue;
+testWhenComputableThrowsError;
+testWhenComputableThrowsRuntimeException;
+testDoesNotRecalculateWhenSetToFalse -> testDefaultBehaviourNotToRecalculateExecutionExceptions [label=" computable", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testOnlyCallComputableOnceIfDoesNotThrowException [label=" computable", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> setUpComputableMock [label=" computable", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testDoesRecalculateWhenSetToTrue [label=" computable", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testWhenComputableThrowsError [label=" computable", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testOnlyCallComputableOnceIfDoesNotThrowException [label=" computable", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> setUpComputableMock [label=" computable", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testDoesRecalculateWhenSetToTrue [label=" computable", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testWhenComputableThrowsError [label=" computable", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> setUpComputableMock [label=" computable", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testDoesRecalculateWhenSetToTrue [label=" computable", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testWhenComputableThrowsError [label=" computable", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+setUpComputableMock -> testDoesRecalculateWhenSetToTrue [label=" computable", dir=none];
+setUpComputableMock -> testWhenComputableThrowsError [label=" computable", dir=none];
+setUpComputableMock -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+testDoesRecalculateWhenSetToTrue -> testWhenComputableThrowsError [label=" computable", dir=none];
+testDoesRecalculateWhenSetToTrue -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+testWhenComputableThrowsError -> testWhenComputableThrowsRuntimeException [label=" computable", dir=none];
+}

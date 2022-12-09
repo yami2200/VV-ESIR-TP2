@@ -1,0 +1,24 @@
+digraph G {
+testAmbiguousPartialLongOption3;
+testAmbiguousPartialLongOption2;
+testAmbiguousPartialLongOption1;
+testDoubleDash2;
+testAmbiguousPartialLongOption4;
+testBursting;
+testUnrecognizedOptionWithBursting;
+testLongWithUnexpectedArgument2;
+testShortWithUnexpectedArgument;
+testStopBursting;
+testLongWithUnexpectedArgument1;
+testAmbiguousLongWithoutEqualSingleDash;
+testPartialLongOptionSingleDash;
+testUnambiguousPartialLongOption2;
+setUp;
+testUnambiguousPartialLongOption1;
+testUnambiguousPartialLongOption4;
+testUnambiguousPartialLongOption3;
+testNegativeOption;
+testStopBursting2;
+testLongWithoutEqualSingleDash;
+testMissingArgWithBursting;
+}

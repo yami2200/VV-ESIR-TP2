@@ -1,0 +1,12 @@
+digraph G {
+testTransformedBag;
+testTransformedSortedBag;
+testSynchronizedSortedBag;
+testSynchronizedBag;
+testUnmodifiableSortedBag;
+testPredicatedBag;
+testUnmodifiableBag;
+testPredicatedSortedBag;
+testTransformedBag -> testTransformedSortedBag [label=" nopTransformer", dir=none];
+testPredicatedBag -> testPredicatedSortedBag [label=" truePredicate", dir=none];
+}

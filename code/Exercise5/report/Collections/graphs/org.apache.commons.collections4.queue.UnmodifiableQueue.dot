@@ -1,0 +1,13 @@
+digraph G {
+add;
+offer;
+iterator;
+removeAll;
+addAll;
+clear;
+poll;
+unmodifiableQueue;
+remove;
+removeIf;
+retainAll;
+}

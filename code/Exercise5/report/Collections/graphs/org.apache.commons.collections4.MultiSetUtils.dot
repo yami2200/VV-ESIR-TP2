@@ -1,0 +1,6 @@
+digraph G {
+predicatedMultiSet;
+emptyMultiSet;
+synchronizedMultiSet;
+unmodifiableMultiSet;
+}

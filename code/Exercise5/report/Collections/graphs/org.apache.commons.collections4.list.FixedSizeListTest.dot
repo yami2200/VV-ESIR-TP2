@@ -1,0 +1,14 @@
+digraph G {
+testListAllowsMutationOfUnderlyingCollection;
+isRemoveSupported;
+testIsFull;
+makeFullCollection;
+makeObject;
+testRemove;
+getCompatibilityVersion;
+testAdd;
+testAddAll;
+testSubList;
+testMaxSize;
+isAddSupported;
+}

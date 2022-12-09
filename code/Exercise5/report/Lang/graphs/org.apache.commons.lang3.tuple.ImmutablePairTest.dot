@@ -1,0 +1,26 @@
+digraph G {
+testNullPairRight;
+testNullPairValue;
+testEmptyArrayLength;
+testNullPairLeft;
+testNullPairSame;
+testPairOfMapEntry;
+testPairOfObjects;
+testUseAsKeyOfHashMap;
+testUnsupportedOperation;
+testSerialization;
+testComparableRightOnly;
+testEmptyArrayGenerics;
+testHashCode;
+testToStringLeft;
+testUseAsKeyOfTreeMap;
+testToString;
+testNullPairKey;
+testNullPairEquals;
+testComparableLeftOnly;
+testOfNonNull;
+testBasic;
+testNullPairTyped;
+testEquals;
+testToStringRight;
+}

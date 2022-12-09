@@ -1,0 +1,7 @@
+digraph G {
+equalPredicate;
+getValue;
+evaluate;
+equalPredicate -> evaluate [label=" equator", dir=none];
+getValue -> evaluate [label=" iValue", dir=none];
+}

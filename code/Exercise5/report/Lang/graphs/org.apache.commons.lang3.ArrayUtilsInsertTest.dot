@@ -1,0 +1,11 @@
+digraph G {
+testInsertLongs;
+testInsertFloats;
+testInsertBytes;
+testInsertDoubles;
+testInsertGenericArray;
+testInsertChars;
+testInsertInts;
+testInsertBooleans;
+testInsertShorts;
+}

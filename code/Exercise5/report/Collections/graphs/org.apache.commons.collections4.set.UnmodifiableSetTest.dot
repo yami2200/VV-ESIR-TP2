@@ -1,0 +1,10 @@
+digraph G {
+suite;
+isRemoveSupported;
+makeFullCollection;
+makeObject;
+testDecorateFactory;
+getCompatibilityVersion;
+testUnmodifiable;
+isAddSupported;
+}

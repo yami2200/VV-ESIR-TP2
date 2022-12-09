@@ -1,0 +1,18 @@
+digraph G {
+quoteMatcher;
+tabMatcher;
+noneMatcher;
+stringMatcher;
+isMatch;
+trimMatcher;
+charMatcher;
+splitMatcher;
+singleQuoteMatcher;
+commaMatcher;
+charSetMatcher;
+doubleQuoteMatcher;
+spaceMatcher;
+noneMatcher -> charSetMatcher [label=" NONE_MATCHER", dir=none];
+noneMatcher -> stringMatcher [label=" NONE_MATCHER", dir=none];
+stringMatcher -> charSetMatcher [label=" NONE_MATCHER", dir=none];
+}

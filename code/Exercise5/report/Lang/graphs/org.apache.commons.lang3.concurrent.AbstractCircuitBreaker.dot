@@ -1,0 +1,12 @@
+digraph G {
+incrementAndCheckState;
+removeChangeListener;
+isOpen;
+isClosed;
+checkState;
+close;
+open;
+addChangeListener;
+removeChangeListener -> addChangeListener [label=" changeSupport", dir=none];
+isOpen -> isClosed [label=" state", dir=none];
+}

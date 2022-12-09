@@ -1,0 +1,29 @@
+digraph G {
+getOptionGroup;
+addRequiredOption;
+addOption;
+hasOption;
+hasLongOption;
+getMatchingOptions;
+getOption;
+toString;
+getOptions;
+hasShortOption;
+addOptionGroup;
+getRequiredOptions;
+getOptionGroup -> addOptionGroup [label=" optionGroups", dir=none];
+hasOption -> hasLongOption [label=" longOpts", dir=none];
+hasOption -> getMatchingOptions [label=" longOpts", dir=none];
+hasOption -> getOption [label=" shortOpts, longOpts", dir=none];
+hasOption -> toString [label=" shortOpts, longOpts", dir=none];
+hasOption -> hasShortOption [label=" shortOpts", dir=none];
+hasLongOption -> getMatchingOptions [label=" longOpts", dir=none];
+hasLongOption -> getOption [label=" longOpts", dir=none];
+hasLongOption -> toString [label=" longOpts", dir=none];
+getMatchingOptions -> getOption [label=" longOpts", dir=none];
+getMatchingOptions -> toString [label=" longOpts", dir=none];
+getOption -> toString [label=" shortOpts, longOpts", dir=none];
+getOption -> hasShortOption [label=" shortOpts", dir=none];
+toString -> hasShortOption [label=" shortOpts", dir=none];
+addOptionGroup -> getRequiredOptions [label=" requiredOpts", dir=none];
+}

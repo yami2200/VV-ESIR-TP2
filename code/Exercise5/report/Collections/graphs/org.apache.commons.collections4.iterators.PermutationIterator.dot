@@ -1,0 +1,6 @@
+digraph G {
+next;
+hasNext;
+remove;
+next -> hasNext [label=" nextPermutation", dir=none];
+}

@@ -1,0 +1,15 @@
+digraph G {
+testFormattable_simple;
+testEmptyArrayLength;
+testMapEntry;
+testPairOfMapEntry;
+testPairOfObjects;
+testToStringCustom;
+testEmptyArrayGenerics;
+testComparable2;
+testComparable1;
+testFormattable_padded;
+testCompatibilityBetweenPairs;
+testToString;
+testOfNonNull;
+}

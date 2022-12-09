@@ -1,0 +1,24 @@
+digraph G {
+getRawType;
+isAssignable;
+parameterize;
+typesSatisfyVariables;
+getImplicitUpperBounds;
+isArrayType;
+determineTypeArguments;
+genericArrayType;
+wildcardType;
+isInstance;
+normalizeUpperBounds;
+unrollVariables;
+getImplicitBounds;
+parameterizeWithOwner;
+equals;
+toLongString;
+getTypeArguments;
+toString;
+containsTypeVariables;
+getArrayComponentType;
+getImplicitLowerBounds;
+wrap;
+}

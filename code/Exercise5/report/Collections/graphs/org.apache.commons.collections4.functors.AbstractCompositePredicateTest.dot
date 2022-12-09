@@ -1,0 +1,9 @@
+digraph G {
+nullElementsInCollectionToGetInstance;
+nullElementInArrayToGetInstance;
+singletonCollectionToGetInstance;
+nullElementsInArrayToGetInstance;
+singleElementArrayToGetInstance;
+nullArrayToGetInstance;
+nullCollectionToGetInstance;
+}

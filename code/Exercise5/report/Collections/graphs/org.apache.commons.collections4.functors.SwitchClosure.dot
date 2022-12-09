@@ -1,0 +1,10 @@
+digraph G {
+getDefaultClosure;
+switchClosure;
+getClosures;
+execute;
+getPredicates;
+getDefaultClosure -> execute [label=" iDefault", dir=none];
+getClosures -> execute [label=" iClosures", dir=none];
+execute -> getPredicates [label=" iPredicates", dir=none];
+}

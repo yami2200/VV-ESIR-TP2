@@ -1,0 +1,9 @@
+digraph G {
+add;
+removeAll;
+addAll;
+collectionBag;
+containsAll;
+remove;
+retainAll;
+}

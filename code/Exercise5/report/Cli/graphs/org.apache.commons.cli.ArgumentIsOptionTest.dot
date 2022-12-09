@@ -1,0 +1,12 @@
+digraph G {
+testOptionAndOptionWithArgument;
+testOption;
+setUp;
+testOptionWithArgument;
+testOptionAndOptionWithArgument -> testOption [label=" parser, options", dir=none];
+testOptionAndOptionWithArgument -> setUp [label=" parser, options", dir=none];
+testOptionAndOptionWithArgument -> testOptionWithArgument [label=" parser, options", dir=none];
+testOption -> setUp [label=" parser, options", dir=none];
+testOption -> testOptionWithArgument [label=" parser, options", dir=none];
+setUp -> testOptionWithArgument [label=" parser, options", dir=none];
+}

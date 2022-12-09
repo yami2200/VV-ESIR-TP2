@@ -1,0 +1,11 @@
+digraph G {
+next;
+getStartIndex;
+getEndIndex;
+getArray;
+reset;
+hasNext;
+remove;
+next -> getArray [label=" array", dir=none];
+next -> hasNext [label=" endIndex, index", dir=none];
+}

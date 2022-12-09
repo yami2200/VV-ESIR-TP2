@@ -1,0 +1,10 @@
+digraph G {
+add;
+hashCode;
+equals;
+transformedBag;
+uniqueSet;
+getCount;
+remove;
+transformingBag;
+}

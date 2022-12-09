@@ -1,0 +1,12 @@
+digraph G {
+getCollection;
+suite;
+isRemoveSupported;
+makeFullCollection;
+makeObject;
+testDecorateFactory;
+getCompatibilityVersion;
+isNullSupported;
+testUnmodifiable;
+isAddSupported;
+}

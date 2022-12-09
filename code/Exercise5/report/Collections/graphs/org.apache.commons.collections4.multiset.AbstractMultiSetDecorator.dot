@@ -1,0 +1,10 @@
+digraph G {
+add;
+entrySet;
+hashCode;
+equals;
+uniqueSet;
+getCount;
+setCount;
+remove;
+}

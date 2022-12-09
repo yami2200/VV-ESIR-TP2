@@ -1,0 +1,18 @@
+digraph G {
+escapeHtml3;
+escapeHtml4;
+escapeXml11;
+escapeXml10;
+escapeCsv;
+unescapeJson;
+unescapeCsv;
+escapeJson;
+unescapeJava;
+unescapeHtml3;
+unescapeHtml4;
+unescapeEcmaScript;
+escapeXml;
+escapeJava;
+escapeEcmaScript;
+unescapeXml;
+}

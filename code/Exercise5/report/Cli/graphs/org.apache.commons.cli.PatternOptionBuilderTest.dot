@@ -1,0 +1,12 @@
+digraph G {
+testNumberPattern;
+testUntypedPattern;
+testClassPattern;
+testExistingFilePatternFileNotExist;
+testExistingFilePattern;
+testSimplePattern;
+testEmptyPattern;
+testURLPattern;
+testRequiredOption;
+testObjectPattern;
+}

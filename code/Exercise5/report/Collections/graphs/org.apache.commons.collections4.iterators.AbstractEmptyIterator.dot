@@ -1,0 +1,12 @@
+digraph G {
+next;
+add;
+set;
+previous;
+hasPrevious;
+reset;
+hasNext;
+nextIndex;
+previousIndex;
+remove;
+}

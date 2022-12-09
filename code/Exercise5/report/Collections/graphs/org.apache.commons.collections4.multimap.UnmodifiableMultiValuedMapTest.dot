@@ -1,0 +1,20 @@
+digraph G {
+testPutAllException;
+makeObject;
+testDecorateFactory;
+testUnmodifiableKeySet;
+testRemoveMappingException;
+testUnmodifiable;
+testAddException;
+testClearException;
+testUnmodifiableValues;
+isAddSupported;
+testDecoratorFactoryNullMap;
+testRemoveException;
+testUnmodifiableEntries;
+suite;
+isRemoveSupported;
+testUnmodifiableMapIterator;
+testUnmodifiableAsMap;
+testUnmodifiableKeys;
+}

@@ -1,0 +1,12 @@
+digraph G {
+testLinkedListRemoveLast;
+getCollection;
+testLinkedListAddFirst;
+testLinkedListGetFirst;
+makeObject;
+testLinkedListGetLast;
+testLinkedListAddLast;
+testLinkedListRemoveFirst;
+makeConfirmedCollection;
+makeConfirmedFullCollection;
+}

@@ -1,0 +1,15 @@
+digraph G {
+add;
+transformingList;
+subList;
+set;
+transformedList;
+remove;
+lastIndexOf;
+addAll;
+hashCode;
+equals;
+get;
+listIterator;
+indexOf;
+}

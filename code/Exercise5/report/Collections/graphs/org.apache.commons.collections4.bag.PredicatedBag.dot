@@ -1,0 +1,9 @@
+digraph G {
+predicatedBag;
+add;
+hashCode;
+equals;
+uniqueSet;
+getCount;
+remove;
+}

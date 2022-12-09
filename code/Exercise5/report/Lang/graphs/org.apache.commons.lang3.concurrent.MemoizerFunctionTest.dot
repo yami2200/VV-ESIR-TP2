@@ -1,0 +1,30 @@
+digraph G {
+testDoesNotRecalculateWhenSetToFalse;
+testDefaultBehaviourNotToRecalculateExecutionExceptions;
+testOnlyCallComputableOnceIfDoesNotThrowException;
+setUpComputableMock;
+testDoesRecalculateWhenSetToTrue;
+testWhenComputableThrowsError;
+testWhenComputableThrowsRuntimeException;
+testDoesNotRecalculateWhenSetToFalse -> testDefaultBehaviourNotToRecalculateExecutionExceptions [label=" function", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testOnlyCallComputableOnceIfDoesNotThrowException [label=" function", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> setUpComputableMock [label=" function", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testDoesRecalculateWhenSetToTrue [label=" function", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testWhenComputableThrowsError [label=" function", dir=none];
+testDoesNotRecalculateWhenSetToFalse -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testOnlyCallComputableOnceIfDoesNotThrowException [label=" function", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> setUpComputableMock [label=" function", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testDoesRecalculateWhenSetToTrue [label=" function", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testWhenComputableThrowsError [label=" function", dir=none];
+testDefaultBehaviourNotToRecalculateExecutionExceptions -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> setUpComputableMock [label=" function", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testDoesRecalculateWhenSetToTrue [label=" function", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testWhenComputableThrowsError [label=" function", dir=none];
+testOnlyCallComputableOnceIfDoesNotThrowException -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+setUpComputableMock -> testDoesRecalculateWhenSetToTrue [label=" function", dir=none];
+setUpComputableMock -> testWhenComputableThrowsError [label=" function", dir=none];
+setUpComputableMock -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+testDoesRecalculateWhenSetToTrue -> testWhenComputableThrowsError [label=" function", dir=none];
+testDoesRecalculateWhenSetToTrue -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+testWhenComputableThrowsError -> testWhenComputableThrowsRuntimeException [label=" function", dir=none];
+}

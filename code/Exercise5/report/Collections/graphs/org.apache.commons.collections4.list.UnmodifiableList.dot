@@ -1,0 +1,14 @@
+digraph G {
+add;
+unmodifiableList;
+iterator;
+removeAll;
+subList;
+set;
+addAll;
+clear;
+listIterator;
+remove;
+removeIf;
+retainAll;
+}

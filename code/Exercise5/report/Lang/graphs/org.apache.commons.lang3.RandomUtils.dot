@@ -1,0 +1,8 @@
+digraph G {
+nextFloat;
+nextBoolean;
+nextInt;
+nextLong;
+nextDouble;
+nextBytes;
+}

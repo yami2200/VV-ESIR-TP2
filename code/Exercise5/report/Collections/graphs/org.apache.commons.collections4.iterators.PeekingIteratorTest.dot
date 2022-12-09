@@ -1,0 +1,20 @@
+digraph G {
+testSinglePeek;
+makeObject;
+supportsRemove;
+testIteratorExhausted;
+makeEmptyIterator;
+testEmpty;
+testIllegalRemove;
+testMultiplePeek;
+testSinglePeek -> makeObject [label=" testList", dir=none];
+testSinglePeek -> testIteratorExhausted [label=" testList", dir=none];
+testSinglePeek -> testIllegalRemove [label=" testList", dir=none];
+testSinglePeek -> testMultiplePeek [label=" testList", dir=none];
+makeObject -> testIteratorExhausted [label=" testList", dir=none];
+makeObject -> testIllegalRemove [label=" testList", dir=none];
+makeObject -> testMultiplePeek [label=" testList", dir=none];
+testIteratorExhausted -> testIllegalRemove [label=" testList", dir=none];
+testIteratorExhausted -> testMultiplePeek [label=" testList", dir=none];
+testIllegalRemove -> testMultiplePeek [label=" testList", dir=none];
+}

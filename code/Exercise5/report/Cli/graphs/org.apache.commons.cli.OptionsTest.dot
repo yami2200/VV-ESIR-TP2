@@ -1,0 +1,12 @@
+digraph G {
+testDuplicateLong;
+testToString;
+testGetMatchingOpts;
+testGetOptionsGroups;
+testMissingOptionsException;
+testMissingOptionException;
+testSimple;
+testDuplicateSimple;
+testHelpOptions;
+testLong;
+}

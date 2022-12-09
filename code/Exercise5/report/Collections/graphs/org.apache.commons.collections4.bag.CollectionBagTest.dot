@@ -1,0 +1,8 @@
+digraph G {
+makeObject;
+makeConfirmedCollection;
+getCompatibilityVersion;
+testEmptyBagCompatibility;
+testFullBagCompatibility;
+makeConfirmedFullCollection;
+}

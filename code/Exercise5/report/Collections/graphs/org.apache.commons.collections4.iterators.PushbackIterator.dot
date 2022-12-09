@@ -1,0 +1,12 @@
+digraph G {
+pushback;
+next;
+pushbackIterator;
+hasNext;
+remove;
+pushback -> next [label=" items", dir=none];
+pushback -> hasNext [label=" items", dir=none];
+next -> pushbackIterator [label=" iterator", dir=none];
+next -> hasNext [label=" iterator, items", dir=none];
+pushbackIterator -> hasNext [label=" iterator", dir=none];
+}

@@ -1,0 +1,7 @@
+digraph G {
+testContains;
+testNumberOfBitMaps;
+testSet;
+testGetLongBit;
+testGetLongIndex;
+}

@@ -1,0 +1,8 @@
+digraph G {
+makeObject;
+testDecorateFactory;
+supportsRemove;
+makeEmptyIterator;
+testIterator;
+makeObject -> testDecorateFactory [label=" testList", dir=none];
+}

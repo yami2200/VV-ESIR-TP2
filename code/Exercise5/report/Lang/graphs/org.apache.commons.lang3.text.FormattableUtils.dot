@@ -1,0 +1,5 @@
+digraph G {
+toString;
+append;
+toString -> append [label=" SIMPLEST_FORMAT", dir=none];
+}

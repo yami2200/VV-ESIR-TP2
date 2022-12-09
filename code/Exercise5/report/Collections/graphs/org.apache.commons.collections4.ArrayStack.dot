@@ -1,0 +1,7 @@
+digraph G {
+pop;
+search;
+push;
+empty;
+peek;
+}

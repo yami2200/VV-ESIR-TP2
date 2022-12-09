@@ -1,0 +1,28 @@
+digraph G {
+getMaxLengthEstimate;
+getTimeZone;
+hashCode;
+equals;
+format;
+toString;
+getPattern;
+getLocale;
+getTimeZone -> hashCode [label=" timeZone", dir=none];
+getTimeZone -> equals [label=" timeZone", dir=none];
+getTimeZone -> format [label=" timeZone", dir=none];
+getTimeZone -> toString [label=" timeZone", dir=none];
+hashCode -> equals [label=" pattern, timeZone, locale", dir=none];
+hashCode -> format [label=" pattern, timeZone, locale", dir=none];
+hashCode -> toString [label=" pattern, timeZone, locale", dir=none];
+hashCode -> getPattern [label=" pattern", dir=none];
+hashCode -> getLocale [label=" locale", dir=none];
+equals -> format [label=" pattern, timeZone, locale", dir=none];
+equals -> toString [label=" pattern, timeZone, locale", dir=none];
+equals -> getPattern [label=" pattern", dir=none];
+equals -> getLocale [label=" locale", dir=none];
+format -> toString [label=" pattern, timeZone, locale", dir=none];
+format -> getPattern [label=" pattern", dir=none];
+format -> getLocale [label=" locale", dir=none];
+toString -> getPattern [label=" pattern", dir=none];
+toString -> getLocale [label=" locale", dir=none];
+}

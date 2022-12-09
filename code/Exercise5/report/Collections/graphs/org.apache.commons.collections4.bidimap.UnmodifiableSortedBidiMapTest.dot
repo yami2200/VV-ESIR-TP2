@@ -1,0 +1,15 @@
+digraph G {
+ignoredTests;
+makeObject;
+isPutChangeSupported;
+testDecorateFactory;
+testUnmodifiable;
+suite;
+isRemoveSupported;
+makeConfirmedMap;
+isPutAddSupported;
+isAllowNullKey;
+isAllowNullValue;
+makeFullMap;
+isSubMapViewsSerializable;
+}

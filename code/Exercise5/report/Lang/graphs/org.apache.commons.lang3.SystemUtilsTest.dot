@@ -1,0 +1,22 @@
+digraph G {
+testGetJavaIoTmpDir;
+testIsJavaVersionAtLeast;
+testOsVersionMatches;
+testOSMatchesName;
+test_IS_JAVA;
+test_IS_OS;
+testIsJavaVersionAtMost;
+testGetUserDir;
+test_USER_NAME;
+testGetHostName;
+testConstructor;
+testJavaAwtHeadless;
+testGetUserHome;
+testOSMatchesNameAndVersion;
+testGetEnvironmentVariablePresent;
+test_IS_zOS;
+testGetEnvironmentVariableAbsent;
+testGetJavaHome;
+testGetUserName;
+testJavaVersionMatches;
+}

@@ -1,0 +1,9 @@
+digraph G {
+testToArray;
+simpleStreamForEachFailing;
+testSimpleStreamMap;
+testSimpleStreamMapFailing;
+testSimpleStreamForEach;
+simpleStreamFilterFailing;
+testSimpleStreamFilter;
+}

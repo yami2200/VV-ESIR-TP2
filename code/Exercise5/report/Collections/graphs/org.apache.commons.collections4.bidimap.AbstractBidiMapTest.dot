@@ -1,0 +1,23 @@
+digraph G {
+testBidiRemoveByEntrySet;
+makeObject;
+bulkTestBidiMapIterator;
+testBidiMapIteratorSet;
+getCompatibilityVersion;
+testBidiPut;
+testBidiInverse;
+testBidiGetKeyInverse;
+testBidiKeySetValuesOrder;
+getMap;
+testBidiRemove;
+isAllowDuplicateValues;
+testBidiModifyEntrySet;
+bulkTestInverseMap;
+testBidiGetKey;
+bulkTestMapEntrySet;
+verifyInverse;
+testBidiClear;
+verify;
+makeFullMap;
+testBidiRemoveByKeySet;
+}

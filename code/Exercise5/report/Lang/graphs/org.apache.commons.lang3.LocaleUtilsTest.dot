@@ -1,0 +1,24 @@
+digraph G {
+testToLocale_1Part;
+testToLocale_3Part;
+testLocaleLookupList_Locale;
+testLanguagesByCountry;
+testLang328;
+testLang865;
+testConstructor;
+testLanguageAndUNM49Numeric3AreaCodeLang1312;
+testThreeCharsLocale;
+testIsAvailableLocale;
+testLocaleLookupList_LocaleLocale;
+testAvailableLocaleSet;
+testCountriesByLanguage;
+testParseAllLocales;
+testToLocale_2Part;
+setUp;
+testAvailableLocaleList;
+testToLocale_Locale_defaults;
+testToLocales;
+testLocaleLookupList_Locale -> testLocaleLookupList_LocaleLocale [label=" LOCALE_EN_US, LOCALE_EN_US_ZZZZ, LOCALE_EN, LOCALE_QQ", dir=none];
+testLocaleLookupList_Locale -> testIsAvailableLocale [label=" LOCALE_EN_US, LOCALE_EN_US_ZZZZ, LOCALE_EN, LOCALE_QQ", dir=none];
+testIsAvailableLocale -> testLocaleLookupList_LocaleLocale [label=" LOCALE_FR_CA, LOCALE_EN_US, LOCALE_EN_US_ZZZZ, LOCALE_QQ_ZZ, LOCALE_EN, LOCALE_FR, LOCALE_QQ", dir=none];
+}

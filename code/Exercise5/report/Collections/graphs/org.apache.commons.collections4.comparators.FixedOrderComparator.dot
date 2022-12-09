@@ -1,0 +1,30 @@
+digraph G {
+add;
+setUnknownObjectBehavior;
+compare;
+getUnknownObjectBehavior;
+hashCode;
+isLocked;
+equals;
+addAsEqual;
+add -> compare [label=" map", dir=none];
+add -> hashCode [label=" counter, map", dir=none];
+add -> equals [label=" counter, map", dir=none];
+add -> addAsEqual [label=" map", dir=none];
+setUnknownObjectBehavior -> compare [label=" unknownObjectBehavior", dir=none];
+setUnknownObjectBehavior -> getUnknownObjectBehavior [label=" unknownObjectBehavior", dir=none];
+setUnknownObjectBehavior -> hashCode [label=" unknownObjectBehavior", dir=none];
+setUnknownObjectBehavior -> equals [label=" unknownObjectBehavior", dir=none];
+compare -> getUnknownObjectBehavior [label=" unknownObjectBehavior", dir=none];
+compare -> hashCode [label=" unknownObjectBehavior, isLocked, map", dir=none];
+compare -> isLocked [label=" isLocked", dir=none];
+compare -> equals [label=" unknownObjectBehavior, isLocked, map", dir=none];
+compare -> addAsEqual [label=" map", dir=none];
+getUnknownObjectBehavior -> hashCode [label=" unknownObjectBehavior", dir=none];
+getUnknownObjectBehavior -> equals [label=" unknownObjectBehavior", dir=none];
+hashCode -> isLocked [label=" isLocked", dir=none];
+hashCode -> equals [label=" unknownObjectBehavior, isLocked, counter, map", dir=none];
+hashCode -> addAsEqual [label=" map", dir=none];
+isLocked -> equals [label=" isLocked", dir=none];
+equals -> addAsEqual [label=" map", dir=none];
+}

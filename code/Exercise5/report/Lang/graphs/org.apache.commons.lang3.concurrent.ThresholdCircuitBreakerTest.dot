@@ -1,0 +1,13 @@
+digraph G {
+testThreshold;
+testThresholdEqualsZero;
+testThresholdCircuitBreakingException;
+testClosingThresholdCircuitBreaker;
+testGettingThreshold;
+testThreshold -> testThresholdCircuitBreakingException [label=" threshold", dir=none];
+testThreshold -> testClosingThresholdCircuitBreaker [label=" threshold", dir=none];
+testThreshold -> testGettingThreshold [label=" threshold", dir=none];
+testThresholdCircuitBreakingException -> testClosingThresholdCircuitBreaker [label=" threshold", dir=none];
+testThresholdCircuitBreakingException -> testGettingThreshold [label=" threshold", dir=none];
+testClosingThresholdCircuitBreaker -> testGettingThreshold [label=" threshold", dir=none];
+}

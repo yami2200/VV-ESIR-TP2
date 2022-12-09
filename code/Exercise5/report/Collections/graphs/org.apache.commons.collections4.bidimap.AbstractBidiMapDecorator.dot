@@ -1,0 +1,7 @@
+digraph G {
+mapIterator;
+getKey;
+removeValue;
+inverseBidiMap;
+values;
+}

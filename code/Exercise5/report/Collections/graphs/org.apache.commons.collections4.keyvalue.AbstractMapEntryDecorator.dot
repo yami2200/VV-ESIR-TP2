@@ -1,0 +1,23 @@
+digraph G {
+getKey;
+getValue;
+hashCode;
+setValue;
+equals;
+toString;
+getKey -> getValue [label=" entry", dir=none];
+getKey -> hashCode [label=" entry", dir=none];
+getKey -> setValue [label=" entry", dir=none];
+getKey -> equals [label=" entry", dir=none];
+getKey -> toString [label=" entry", dir=none];
+getValue -> hashCode [label=" entry", dir=none];
+getValue -> setValue [label=" entry", dir=none];
+getValue -> equals [label=" entry", dir=none];
+getValue -> toString [label=" entry", dir=none];
+hashCode -> setValue [label=" entry", dir=none];
+hashCode -> equals [label=" entry", dir=none];
+hashCode -> toString [label=" entry", dir=none];
+setValue -> equals [label=" entry", dir=none];
+setValue -> toString [label=" entry", dir=none];
+equals -> toString [label=" entry", dir=none];
+}

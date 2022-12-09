@@ -1,0 +1,7 @@
+digraph G {
+getKey;
+getValue;
+toString;
+getKey -> toString [label=" key", dir=none];
+getValue -> toString [label=" value", dir=none];
+}

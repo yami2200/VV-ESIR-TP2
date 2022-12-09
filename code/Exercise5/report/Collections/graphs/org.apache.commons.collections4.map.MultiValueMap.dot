@@ -1,0 +1,15 @@
+digraph G {
+getCollection;
+iterator;
+totalSize;
+size;
+entrySet;
+removeMapping;
+putAll;
+values;
+clear;
+containsValue;
+put;
+multiValueMap;
+totalSize -> values [label=" valuesView", dir=none];
+}

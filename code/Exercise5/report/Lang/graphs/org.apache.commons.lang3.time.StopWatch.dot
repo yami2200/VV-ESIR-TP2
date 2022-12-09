@@ -1,0 +1,34 @@
+digraph G {
+resume;
+suspend;
+isStopped;
+isSuspended;
+toSplitString;
+getNanoTime;
+getTime;
+getSplitNanoTime;
+formatTime;
+start;
+getMessage;
+isStarted;
+split;
+stop;
+getStopTime;
+getSplitTime;
+unsplit;
+createStarted;
+create;
+reset;
+toString;
+getStartTime;
+formatSplitTime;
+isStopped -> isSuspended [label=" runningState", dir=none];
+isStopped -> isStarted [label=" runningState", dir=none];
+isSuspended -> isStarted [label=" runningState", dir=none];
+toSplitString -> getSplitTime [label=" NANO_2_MILLIS", dir=none];
+toSplitString -> getMessage [label=" message", dir=none];
+toSplitString -> toString [label=" message", dir=none];
+toSplitString -> formatSplitTime [label=" NANO_2_MILLIS", dir=none];
+getSplitTime -> formatSplitTime [label=" NANO_2_MILLIS", dir=none];
+getMessage -> toString [label=" message", dir=none];
+}

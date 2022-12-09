@@ -1,0 +1,10 @@
+digraph G {
+getTrueTransformer;
+transform;
+getFalseTransformer;
+getPredicate;
+ifTransformer;
+getTrueTransformer -> transform [label=" iTrueTransformer", dir=none];
+transform -> getFalseTransformer [label=" iFalseTransformer", dir=none];
+transform -> getPredicate [label=" iPredicate", dir=none];
+}

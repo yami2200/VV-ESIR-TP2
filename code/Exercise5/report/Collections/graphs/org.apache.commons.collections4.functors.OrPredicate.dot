@@ -1,0 +1,6 @@
+digraph G {
+orPredicate;
+evaluate;
+getPredicates;
+evaluate -> getPredicates [label=" iPredicate2, iPredicate1", dir=none];
+}

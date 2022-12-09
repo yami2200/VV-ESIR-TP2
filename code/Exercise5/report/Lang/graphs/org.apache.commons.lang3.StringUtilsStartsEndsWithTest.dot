@@ -1,0 +1,14 @@
+digraph G {
+testStartsWith;
+testStartsWithAny;
+testEndsWithAny;
+testEndsWith;
+testEndsWithIgnoreCase;
+testStartsWithIgnoreCase;
+testStartsWith -> testEndsWith [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+testStartsWith -> testEndsWithIgnoreCase [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+testStartsWith -> testStartsWithIgnoreCase [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+testEndsWith -> testEndsWithIgnoreCase [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+testEndsWith -> testStartsWithIgnoreCase [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+testEndsWithIgnoreCase -> testStartsWithIgnoreCase [label=" bar, foobar, BAR, FOO, foo, FOOBAR", dir=none];
+}

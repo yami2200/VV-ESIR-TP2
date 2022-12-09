@@ -1,0 +1,8 @@
+digraph G {
+testConstructorForNull;
+testBuildVarArg;
+testApply0Arg;
+testThrowsChecked;
+testToString;
+testFindAndInvoke;
+}

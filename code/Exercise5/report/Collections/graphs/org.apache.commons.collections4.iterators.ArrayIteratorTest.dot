@@ -1,0 +1,11 @@
+digraph G {
+testNullArray;
+makeObject;
+testReset;
+supportsRemove;
+makeEmptyIterator;
+testIterator;
+makeObject -> testReset [label=" testArray", dir=none];
+makeObject -> testIterator [label=" testArray", dir=none];
+testReset -> testIterator [label=" testArray", dir=none];
+}

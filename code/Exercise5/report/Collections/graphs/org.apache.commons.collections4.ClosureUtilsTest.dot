@@ -1,0 +1,14 @@
+digraph G {
+testNopClosure;
+testDoWhileClosure;
+testForClosure;
+testSingletonPatternInSerialization;
+testTransformerClosure;
+testChainedClosure;
+testSwitchMapClosure;
+testInvokeClosure;
+testWhileClosure;
+testExceptionClosure;
+testSwitchClosure;
+testIfClosure;
+}

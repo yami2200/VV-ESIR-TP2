@@ -1,0 +1,8 @@
+digraph G {
+testStaticFactoryMethods;
+makeObject;
+testConstructors;
+getCompatibilityVersion;
+testEqualsCompatibleInstance;
+getComparableObjectsOrdered;
+}

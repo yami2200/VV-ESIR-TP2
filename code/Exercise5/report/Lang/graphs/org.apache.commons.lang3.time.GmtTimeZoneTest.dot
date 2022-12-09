@@ -1,0 +1,14 @@
+digraph G {
+testToString;
+minutesOutOfRange;
+getOffset;
+setRawOffset;
+useDaylightTime;
+getID;
+hoursInRange;
+hoursOutOfRange;
+minutesInRange;
+inDaylightTime;
+testGetOffset;
+getRawOffset;
+}

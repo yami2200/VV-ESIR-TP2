@@ -1,0 +1,25 @@
+digraph G {
+testGetObject;
+testEqualsWithOtherObjects;
+testGet;
+testEqualsTrue;
+testToString;
+testEqualsFalse;
+setUp;
+testToStringNull;
+testGetObject -> testGet [label=" init, VALUE", dir=none];
+testGetObject -> testEqualsTrue [label=" init, VALUE", dir=none];
+testGetObject -> testToString [label=" init, VALUE", dir=none];
+testGetObject -> testEqualsFalse [label=" VALUE", dir=none];
+testGetObject -> setUp [label=" init, VALUE", dir=none];
+testGet -> testEqualsTrue [label=" init, VALUE", dir=none];
+testGet -> testToString [label=" init, VALUE", dir=none];
+testGet -> testEqualsFalse [label=" VALUE", dir=none];
+testGet -> setUp [label=" init, VALUE", dir=none];
+testEqualsTrue -> testToString [label=" init, VALUE", dir=none];
+testEqualsTrue -> testEqualsFalse [label=" VALUE", dir=none];
+testEqualsTrue -> setUp [label=" init, VALUE", dir=none];
+testToString -> testEqualsFalse [label=" VALUE", dir=none];
+testToString -> setUp [label=" init, VALUE", dir=none];
+testEqualsFalse -> setUp [label=" VALUE", dir=none];
+}

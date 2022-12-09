@@ -1,0 +1,6 @@
+digraph G {
+compare;
+hashCode;
+equals;
+hashCode -> equals [label=" transformer, decorated", dir=none];
+}

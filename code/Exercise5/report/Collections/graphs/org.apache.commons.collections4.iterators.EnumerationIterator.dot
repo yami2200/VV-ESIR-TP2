@@ -1,0 +1,14 @@
+digraph G {
+next;
+getEnumeration;
+setEnumeration;
+hasNext;
+remove;
+next -> getEnumeration [label=" enumeration", dir=none];
+next -> setEnumeration [label=" enumeration", dir=none];
+next -> hasNext [label=" enumeration", dir=none];
+next -> remove [label=" last", dir=none];
+getEnumeration -> setEnumeration [label=" enumeration", dir=none];
+getEnumeration -> hasNext [label=" enumeration", dir=none];
+setEnumeration -> hasNext [label=" enumeration", dir=none];
+}

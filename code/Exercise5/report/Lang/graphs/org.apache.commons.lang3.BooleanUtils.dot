@@ -1,0 +1,26 @@
+digraph G {
+oneHot;
+toStringOnOff;
+compare;
+toBooleanObject;
+or;
+isNotTrue;
+forEach;
+values;
+isFalse;
+toIntegerObject;
+isTrue;
+toInteger;
+toStringYesNo;
+booleanValues;
+toBoolean;
+and;
+negate;
+toBooleanDefaultIfNull;
+toString;
+xor;
+isNotFalse;
+primitiveValues;
+toStringTrueFalse;
+forEach -> values [label=" BOOLEAN_LIST", dir=none];
+}

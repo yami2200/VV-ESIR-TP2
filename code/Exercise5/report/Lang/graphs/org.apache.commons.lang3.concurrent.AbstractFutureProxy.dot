@@ -1,0 +1,17 @@
+digraph G {
+cancel;
+isCancelled;
+getFuture;
+get;
+isDone;
+cancel -> isCancelled [label=" future", dir=none];
+cancel -> getFuture [label=" future", dir=none];
+cancel -> get [label=" future", dir=none];
+cancel -> isDone [label=" future", dir=none];
+isCancelled -> getFuture [label=" future", dir=none];
+isCancelled -> get [label=" future", dir=none];
+isCancelled -> isDone [label=" future", dir=none];
+getFuture -> get [label=" future", dir=none];
+getFuture -> isDone [label=" future", dir=none];
+get -> isDone [label=" future", dir=none];
+}

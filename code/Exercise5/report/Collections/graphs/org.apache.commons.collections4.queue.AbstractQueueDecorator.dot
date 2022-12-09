@@ -1,0 +1,7 @@
+digraph G {
+offer;
+poll;
+remove;
+peek;
+element;
+}

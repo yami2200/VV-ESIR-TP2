@@ -1,0 +1,11 @@
+digraph G {
+testSpecialOptChars;
+testIllegalOptions;
+testCompleteOption;
+testOptionArgNumbers;
+testBaseOptionStringOpt;
+testTwoCompleteOptions;
+testCreateIncompleteOption;
+testBuilderIsResettedAlways;
+testBaseOptionCharOpt;
+}

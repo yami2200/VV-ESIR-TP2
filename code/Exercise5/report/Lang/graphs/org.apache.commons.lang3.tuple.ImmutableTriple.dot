@@ -1,0 +1,18 @@
+digraph G {
+nullTriple;
+getRight;
+getMiddle;
+of;
+ofNonNull;
+emptyArray;
+getLeft;
+nullTriple -> of [label=" NULL", dir=none];
+nullTriple -> ofNonNull [label=" NULL", dir=none];
+getRight -> of [label=" right", dir=none];
+getRight -> ofNonNull [label=" right", dir=none];
+getMiddle -> of [label=" middle", dir=none];
+getMiddle -> ofNonNull [label=" middle", dir=none];
+of -> ofNonNull [label=" middle, NULL, left, right", dir=none];
+of -> getLeft [label=" left", dir=none];
+ofNonNull -> getLeft [label=" left", dir=none];
+}

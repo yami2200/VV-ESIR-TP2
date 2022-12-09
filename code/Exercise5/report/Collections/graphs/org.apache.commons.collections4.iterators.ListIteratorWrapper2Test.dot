@@ -1,0 +1,18 @@
+digraph G {
+makeObject;
+testRemove;
+testReset;
+setUp;
+makeEmptyIterator;
+testIterator;
+makeObject -> testRemove [label=" list1", dir=none];
+makeObject -> testReset [label=" list1", dir=none];
+makeObject -> setUp [label=" list1", dir=none];
+makeObject -> testIterator [label=" list1", dir=none];
+testRemove -> testReset [label=" list1", dir=none];
+testRemove -> setUp [label=" list1", dir=none];
+testRemove -> testIterator [label=" list1", dir=none];
+testReset -> setUp [label=" list1", dir=none];
+testReset -> testIterator [label=" list1, testArray", dir=none];
+setUp -> testIterator [label=" list1", dir=none];
+}

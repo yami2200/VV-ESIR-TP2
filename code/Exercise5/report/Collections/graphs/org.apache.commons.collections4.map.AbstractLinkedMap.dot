@@ -1,0 +1,24 @@
+digraph G {
+mapIterator;
+previousKey;
+firstKey;
+clear;
+lastKey;
+nextKey;
+containsValue;
+previousKey -> firstKey [label=" header", dir=none];
+previousKey -> clear [label=" header", dir=none];
+previousKey -> lastKey [label=" header", dir=none];
+previousKey -> nextKey [label=" header", dir=none];
+previousKey -> containsValue [label=" header", dir=none];
+firstKey -> clear [label=" header", dir=none];
+firstKey -> lastKey [label=" header", dir=none];
+firstKey -> nextKey [label=" header", dir=none];
+firstKey -> containsValue [label=" header", dir=none];
+clear -> lastKey [label=" header", dir=none];
+clear -> nextKey [label=" header", dir=none];
+clear -> containsValue [label=" header", dir=none];
+lastKey -> nextKey [label=" header", dir=none];
+lastKey -> containsValue [label=" header", dir=none];
+nextKey -> containsValue [label=" header", dir=none];
+}

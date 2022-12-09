@@ -1,0 +1,10 @@
+digraph G {
+offer;
+hashCode;
+equals;
+poll;
+remove;
+synchronizedQueue;
+element;
+peek;
+}

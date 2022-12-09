@@ -1,0 +1,4 @@
+digraph G {
+constructorTest;
+testFromIndexProducer;
+}

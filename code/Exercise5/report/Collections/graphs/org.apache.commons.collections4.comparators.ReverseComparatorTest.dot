@@ -1,0 +1,6 @@
+digraph G {
+testSerializeDeserializeThenCompare;
+makeObject;
+getCompatibilityVersion;
+getComparableObjectsOrdered;
+}

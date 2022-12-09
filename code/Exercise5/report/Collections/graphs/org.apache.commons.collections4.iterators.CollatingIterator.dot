@@ -1,0 +1,29 @@
+digraph G {
+next;
+getComparator;
+setComparator;
+addIterator;
+getIteratorIndex;
+hasNext;
+getIterators;
+setIterator;
+remove;
+next -> addIterator [label=" iterators", dir=none];
+next -> getIteratorIndex [label=" lastReturned", dir=none];
+next -> hasNext [label=" iterators, valueSet", dir=none];
+next -> getIterators [label=" iterators", dir=none];
+next -> setIterator [label=" iterators", dir=none];
+next -> remove [label=" iterators, lastReturned", dir=none];
+getComparator -> setComparator [label=" comparator", dir=none];
+addIterator -> hasNext [label=" iterators", dir=none];
+addIterator -> getIterators [label=" iterators", dir=none];
+addIterator -> setIterator [label=" iterators", dir=none];
+addIterator -> remove [label=" iterators", dir=none];
+getIteratorIndex -> remove [label=" lastReturned", dir=none];
+hasNext -> getIterators [label=" iterators", dir=none];
+hasNext -> setIterator [label=" iterators", dir=none];
+hasNext -> remove [label=" iterators", dir=none];
+getIterators -> setIterator [label=" iterators", dir=none];
+getIterators -> remove [label=" iterators", dir=none];
+setIterator -> remove [label=" iterators", dir=none];
+}

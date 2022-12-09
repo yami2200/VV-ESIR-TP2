@@ -1,0 +1,20 @@
+digraph G {
+testRemoveFromFilteredIterator;
+makeObject;
+testRemove;
+testFirstIteratorIsEmptyBug;
+setUp;
+testEmptyChain;
+makeEmptyIterator;
+testIterator;
+testRemoveFromFilteredIterator -> makeObject [label=" list1, list2", dir=none];
+testRemoveFromFilteredIterator -> testRemove [label=" list1, list2", dir=none];
+testRemoveFromFilteredIterator -> setUp [label=" list1, list2", dir=none];
+testRemoveFromFilteredIterator -> testIterator [label=" list1, list2", dir=none];
+makeObject -> testRemove [label=" list1, list3, list2", dir=none];
+makeObject -> setUp [label=" list1, list3, list2", dir=none];
+makeObject -> testIterator [label=" list1, list3, list2", dir=none];
+testRemove -> setUp [label=" list1, list3, list2", dir=none];
+testRemove -> testIterator [label=" list1, testArray, list3, list2", dir=none];
+setUp -> testIterator [label=" list1, list3, list2", dir=none];
+}

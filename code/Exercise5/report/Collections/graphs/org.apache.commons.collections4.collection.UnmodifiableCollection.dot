@@ -1,0 +1,11 @@
+digraph G {
+unmodifiableCollection;
+add;
+iterator;
+removeAll;
+addAll;
+clear;
+remove;
+removeIf;
+retainAll;
+}

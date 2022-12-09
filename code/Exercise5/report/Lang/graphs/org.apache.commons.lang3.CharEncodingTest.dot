@@ -1,0 +1,7 @@
+digraph G {
+testSupported;
+testNotSupported;
+testMustBeSupportedJava1_3_1_and_above;
+testConstructor;
+testStandardCharsetsEquality;
+}

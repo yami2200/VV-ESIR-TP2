@@ -1,0 +1,14 @@
+digraph G {
+testIsBlank;
+testIsAnyBlank;
+testFirstNonBlank;
+testIsNoneBlank;
+testIsAllBlank;
+testIsEmpty;
+testIsNoneEmpty;
+testIsNotEmpty;
+testIsNotBlank;
+testIsAllEmpty;
+testIsAnyEmpty;
+testFirstNonEmpty;
+}

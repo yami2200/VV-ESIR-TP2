@@ -1,0 +1,9 @@
+digraph G {
+makeObject;
+setUp;
+makeEmptyIterator;
+testIterator;
+makeObject -> setUp [label=" list1", dir=none];
+makeObject -> testIterator [label=" list1", dir=none];
+setUp -> testIterator [label=" list1", dir=none];
+}

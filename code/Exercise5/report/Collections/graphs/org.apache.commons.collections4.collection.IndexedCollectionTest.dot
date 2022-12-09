@@ -1,0 +1,14 @@
+digraph G {
+makeUniqueTestCollection;
+getOtherElements;
+makeFullCollection;
+testEnsureDuplicateObjectsCauseException;
+makeObject;
+makeConfirmedCollection;
+getFullElements;
+testReindexUpdatesIndexWhenDecoratedCollectionIsModifiedSeparately;
+makeConfirmedFullCollection;
+makeTestCollection;
+testDecoratedCollectionIsIndexedOnCreation;
+testAddedObjectsCanBeRetrievedByKey;
+}

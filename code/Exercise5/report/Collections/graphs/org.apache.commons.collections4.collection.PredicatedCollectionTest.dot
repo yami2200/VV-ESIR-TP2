@@ -1,0 +1,15 @@
+digraph G {
+testIllegalAdd;
+makeFullCollection;
+makeObject;
+makeConfirmedCollection;
+getFullElements;
+getCompatibilityVersion;
+testIllegalAddAll;
+makeConfirmedFullCollection;
+makeTestCollection;
+testIllegalAdd -> testIllegalAddAll [label=" testPredicate", dir=none];
+testIllegalAdd -> makeTestCollection [label=" testPredicate", dir=none];
+makeFullCollection -> makeObject [label=" truePredicate", dir=none];
+testIllegalAddAll -> makeTestCollection [label=" testPredicate", dir=none];
+}

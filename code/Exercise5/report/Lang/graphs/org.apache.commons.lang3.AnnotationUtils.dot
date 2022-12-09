@@ -1,0 +1,6 @@
+digraph G {
+isValidAnnotationMemberType;
+hashCode;
+equals;
+toString;
+}

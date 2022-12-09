@@ -1,0 +1,12 @@
+digraph G {
+shouldParseShortOptionWithValue;
+setUp;
+shouldParseConcatenatedShortOptions;
+shouldParseShortOptionWithoutValue;
+shouldParseShortOptionWithValue -> setUp [label=" parser, options", dir=none];
+shouldParseShortOptionWithValue -> shouldParseConcatenatedShortOptions [label=" parser, options", dir=none];
+shouldParseShortOptionWithValue -> shouldParseShortOptionWithoutValue [label=" parser, options", dir=none];
+setUp -> shouldParseConcatenatedShortOptions [label=" parser, options", dir=none];
+setUp -> shouldParseShortOptionWithoutValue [label=" parser, options", dir=none];
+shouldParseConcatenatedShortOptions -> shouldParseShortOptionWithoutValue [label=" parser, options", dir=none];
+}

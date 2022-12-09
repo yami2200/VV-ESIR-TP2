@@ -1,0 +1,12 @@
+digraph G {
+testGetType;
+testCannotModify;
+testToString;
+testGetFieldName;
+testGetType -> testCannotModify [label=" booleanDiff", dir=none];
+testGetType -> testToString [label=" booleanDiff", dir=none];
+testGetType -> testGetFieldName [label=" booleanDiff", dir=none];
+testCannotModify -> testToString [label=" booleanDiff", dir=none];
+testCannotModify -> testGetFieldName [label=" booleanDiff", dir=none];
+testToString -> testGetFieldName [label=" booleanDiff, FIELD_NAME", dir=none];
+}

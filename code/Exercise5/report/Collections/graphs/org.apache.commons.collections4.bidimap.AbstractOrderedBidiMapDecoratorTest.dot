@@ -1,0 +1,7 @@
+digraph G {
+makeConfirmedMap;
+makeObject;
+isAllowNullKey;
+isSetValueSupported;
+isAllowNullValue;
+}

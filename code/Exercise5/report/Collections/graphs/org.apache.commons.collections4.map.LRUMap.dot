@@ -1,0 +1,8 @@
+digraph G {
+get;
+clone;
+isScanUntilRemovable;
+maxSize;
+isFull;
+maxSize -> isFull [label=" maxSize", dir=none];
+}

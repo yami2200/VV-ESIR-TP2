@@ -1,0 +1,19 @@
+digraph G {
+testNullTripleSame;
+testEmptyArrayLength;
+testNullTripleEquals;
+testNullTripleLeft;
+testUseAsKeyOfHashMap;
+testSerialization;
+testTripleOf;
+testEmptyArrayGenerics;
+testHashCode;
+testNullTripleMiddle;
+testNullTripleTyped;
+testUseAsKeyOfTreeMap;
+testToString;
+testNullTripleRight;
+testOfNonNull;
+testBasic;
+testEquals;
+}

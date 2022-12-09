@@ -1,0 +1,24 @@
+digraph G {
+testAddValueObject;
+testAddAndGetValuePrimitive;
+testPrimitiveValues;
+testAddValuePrimitive;
+testSubtractValuePrimitive;
+testGetAndDecrement;
+testHashCode;
+testIncrement;
+testAddAndGetValueObject;
+testSubtractValueObject;
+testGetAndIncrement;
+testGetSet;
+testDecrement;
+testGetAndAddValueObject;
+testDecrementAndGet;
+testToString;
+testConstructors;
+testIncrementAndGet;
+testToShort;
+testCompareTo;
+testGetAndAddValuePrimitive;
+testEquals;
+}

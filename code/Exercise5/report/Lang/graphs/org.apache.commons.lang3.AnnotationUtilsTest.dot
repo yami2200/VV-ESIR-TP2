@@ -1,0 +1,34 @@
+digraph G {
+testAnnotationsOfDifferingTypes;
+testNonEquivalentAnnotationsOfSameType;
+testBothArgsNull;
+testToString;
+testEquivalence;
+testIsValidAnnotationMemberType;
+setup;
+testGeneratedAnnotationEquivalentToRealAnnotation;
+testOneArgNull;
+testHashCode;
+testSameInstance;
+testAnnotationsOfDifferingTypes -> testNonEquivalentAnnotationsOfSameType [label=" field1", dir=none];
+testAnnotationsOfDifferingTypes -> testEquivalence [label=" field1", dir=none];
+testAnnotationsOfDifferingTypes -> setup [label=" field1, field4", dir=none];
+testAnnotationsOfDifferingTypes -> testOneArgNull [label=" field1", dir=none];
+testAnnotationsOfDifferingTypes -> testHashCode [label=" field1", dir=none];
+testAnnotationsOfDifferingTypes -> testSameInstance [label=" field1", dir=none];
+testNonEquivalentAnnotationsOfSameType -> testEquivalence [label=" field1", dir=none];
+testNonEquivalentAnnotationsOfSameType -> setup [label=" field1, field3", dir=none];
+testNonEquivalentAnnotationsOfSameType -> testOneArgNull [label=" field1", dir=none];
+testNonEquivalentAnnotationsOfSameType -> testHashCode [label=" field1, field3", dir=none];
+testNonEquivalentAnnotationsOfSameType -> testSameInstance [label=" field1", dir=none];
+testEquivalence -> setup [label=" field1, field2", dir=none];
+testEquivalence -> testOneArgNull [label=" field1", dir=none];
+testEquivalence -> testHashCode [label=" field1", dir=none];
+testEquivalence -> testSameInstance [label=" field1", dir=none];
+setup -> testOneArgNull [label=" field1", dir=none];
+setup -> testHashCode [label=" field1, field3", dir=none];
+setup -> testSameInstance [label=" field1", dir=none];
+testOneArgNull -> testHashCode [label=" field1", dir=none];
+testOneArgNull -> testSameInstance [label=" field1", dir=none];
+testHashCode -> testSameInstance [label=" field1", dir=none];
+}

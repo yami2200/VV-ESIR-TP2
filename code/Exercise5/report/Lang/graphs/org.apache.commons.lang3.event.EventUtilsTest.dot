@@ -1,0 +1,10 @@
+digraph G {
+testAddEventListenerThrowsException;
+testAddEventListenerWithNoAddMethod;
+testBindEventsToMethod;
+testBindEventsToMethodWithEvent;
+testAddEventListener;
+testBindFilteredEventsToMethod;
+testConstructor;
+testAddEventListenerWithPrivateAddMethod;
+}

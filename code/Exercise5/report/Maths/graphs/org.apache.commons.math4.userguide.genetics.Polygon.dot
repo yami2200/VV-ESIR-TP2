@@ -1,0 +1,6 @@
+digraph G {
+mutate;
+randomPolygon;
+draw;
+mutate -> draw [label=" data", dir=none];
+}

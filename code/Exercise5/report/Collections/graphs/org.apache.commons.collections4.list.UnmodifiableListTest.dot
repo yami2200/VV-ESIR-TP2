@@ -1,0 +1,17 @@
+digraph G {
+isRemoveSupported;
+makeFullCollection;
+makeObject;
+testDecorateFactory;
+isSetSupported;
+getCompatibilityVersion;
+testUnmodifiable;
+isAddSupported;
+testUnmodifiableIterator;
+makeFullCollection -> testDecorateFactory [label=" list", dir=none];
+makeFullCollection -> testUnmodifiable [label=" list", dir=none];
+makeFullCollection -> testUnmodifiableIterator [label=" list", dir=none];
+testDecorateFactory -> testUnmodifiable [label=" list", dir=none];
+testDecorateFactory -> testUnmodifiableIterator [label=" list", dir=none];
+testUnmodifiable -> testUnmodifiableIterator [label=" list", dir=none];
+}

@@ -1,0 +1,22 @@
+digraph G {
+testComparator;
+suite;
+isRemoveSupported;
+makeFullCollection;
+makeObject;
+testDecorateFactory;
+getCompatibilityVersion;
+testUnmodifiable;
+verifyUnmodifiable;
+isAddSupported;
+testComparator -> makeFullCollection [label=" set", dir=none];
+testComparator -> testDecorateFactory [label=" set", dir=none];
+testComparator -> testUnmodifiable [label=" set", dir=none];
+testComparator -> verifyUnmodifiable [label=" set", dir=none];
+makeFullCollection -> testDecorateFactory [label=" set", dir=none];
+makeFullCollection -> testUnmodifiable [label=" set", dir=none];
+makeFullCollection -> verifyUnmodifiable [label=" set", dir=none];
+testDecorateFactory -> testUnmodifiable [label=" set", dir=none];
+testDecorateFactory -> verifyUnmodifiable [label=" set", dir=none];
+testUnmodifiable -> verifyUnmodifiable [label=" set, array", dir=none];
+}

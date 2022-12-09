@@ -1,0 +1,28 @@
+digraph G {
+testPermutationResultSize;
+makeObject;
+testPermutationExhaustivity;
+testEmptyCollection;
+supportsRemove;
+testPermutationException;
+setUp;
+supportsEmptyIterator;
+makeEmptyIterator;
+testPermutationUnicity;
+testPermutatorHasMore;
+makeObject -> testPermutationExhaustivity [label=" testList", dir=none];
+makeObject -> testPermutationException [label=" testList", dir=none];
+makeObject -> setUp [label=" testList", dir=none];
+makeObject -> testPermutationUnicity [label=" testList", dir=none];
+makeObject -> testPermutatorHasMore [label=" testList", dir=none];
+testPermutationExhaustivity -> testPermutationException [label=" testList", dir=none];
+testPermutationExhaustivity -> setUp [label=" testList", dir=none];
+testPermutationExhaustivity -> testPermutationUnicity [label=" testList", dir=none];
+testPermutationExhaustivity -> testPermutatorHasMore [label=" testList", dir=none];
+testPermutationException -> setUp [label=" testList", dir=none];
+testPermutationException -> testPermutationUnicity [label=" testList", dir=none];
+testPermutationException -> testPermutatorHasMore [label=" testList", dir=none];
+setUp -> testPermutationUnicity [label=" testList", dir=none];
+setUp -> testPermutatorHasMore [label=" testList", dir=none];
+testPermutationUnicity -> testPermutatorHasMore [label=" testList", dir=none];
+}

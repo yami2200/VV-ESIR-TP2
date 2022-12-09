@@ -1,0 +1,13 @@
+digraph G {
+testResultValidation;
+testReentrantReadWriteLockNotExclusive;
+testStampedLockNotExclusive;
+testReentrantReadWriteLockExclusive;
+testStampedLockExclusive;
+testReentrantReadWriteLockNotExclusive -> testStampedLockNotExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+testReentrantReadWriteLockNotExclusive -> testReentrantReadWriteLockExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+testReentrantReadWriteLockNotExclusive -> testStampedLockExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+testStampedLockNotExclusive -> testReentrantReadWriteLockExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+testStampedLockNotExclusive -> testStampedLockExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+testReentrantReadWriteLockExclusive -> testStampedLockExclusive [label=" TOTAL_DELAY, DELAY", dir=none];
+}

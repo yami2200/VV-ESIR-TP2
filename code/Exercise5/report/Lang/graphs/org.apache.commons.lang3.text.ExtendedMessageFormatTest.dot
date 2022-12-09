@@ -1,0 +1,28 @@
+digraph G {
+testOverriddenBuiltinFormat;
+testExtendedAndBuiltInFormats;
+testBuiltInChoiceFormat;
+setUp;
+testBuiltInDateTimeFormat;
+testExtendedFormats;
+testEscapedQuote_LANG_477;
+testEqualsHashcode;
+testBuiltInNumberFormat;
+testEmbeddedPatternInChoice;
+testEscapedBraces_LANG_948;
+testExtendedAndBuiltInFormats -> setUp [label=" registry", dir=none];
+testExtendedAndBuiltInFormats -> testExtendedFormats [label=" registry", dir=none];
+testExtendedAndBuiltInFormats -> testEscapedQuote_LANG_477 [label=" registry", dir=none];
+testExtendedAndBuiltInFormats -> testEmbeddedPatternInChoice [label=" registry", dir=none];
+testExtendedAndBuiltInFormats -> testEscapedBraces_LANG_948 [label=" registry", dir=none];
+setUp -> testExtendedFormats [label=" registry", dir=none];
+setUp -> testEscapedQuote_LANG_477 [label=" registry", dir=none];
+setUp -> testEmbeddedPatternInChoice [label=" registry", dir=none];
+setUp -> testEscapedBraces_LANG_948 [label=" registry", dir=none];
+testExtendedFormats -> testEscapedQuote_LANG_477 [label=" registry", dir=none];
+testExtendedFormats -> testEmbeddedPatternInChoice [label=" registry", dir=none];
+testExtendedFormats -> testEscapedBraces_LANG_948 [label=" registry", dir=none];
+testEscapedQuote_LANG_477 -> testEmbeddedPatternInChoice [label=" registry", dir=none];
+testEscapedQuote_LANG_477 -> testEscapedBraces_LANG_948 [label=" registry", dir=none];
+testEmbeddedPatternInChoice -> testEscapedBraces_LANG_948 [label=" registry", dir=none];
+}

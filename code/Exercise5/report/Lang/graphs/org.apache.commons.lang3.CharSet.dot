@@ -1,0 +1,13 @@
+digraph G {
+contains;
+hashCode;
+equals;
+toString;
+getInstance;
+contains -> hashCode [label=" set", dir=none];
+contains -> equals [label=" set", dir=none];
+contains -> toString [label=" set", dir=none];
+hashCode -> equals [label=" set", dir=none];
+hashCode -> toString [label=" set", dir=none];
+equals -> toString [label=" set", dir=none];
+}

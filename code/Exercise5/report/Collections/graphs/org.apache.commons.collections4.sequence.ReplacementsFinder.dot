@@ -1,0 +1,7 @@
+digraph G {
+visitInsertCommand;
+visitDeleteCommand;
+visitKeepCommand;
+visitInsertCommand -> visitKeepCommand [label=" pendingInsertions", dir=none];
+visitDeleteCommand -> visitKeepCommand [label=" pendingDeletions", dir=none];
+}

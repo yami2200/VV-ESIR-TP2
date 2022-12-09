@@ -1,0 +1,4 @@
+digraph G {
+get;
+remove;
+}

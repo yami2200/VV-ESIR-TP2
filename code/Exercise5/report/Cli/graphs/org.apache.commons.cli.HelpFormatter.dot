@@ -1,0 +1,30 @@
+digraph G {
+setLongOptPrefix;
+setNewLine;
+getOptPrefix;
+getArgName;
+printWrapped;
+getDescPadding;
+getSyntaxPrefix;
+getWidth;
+setArgName;
+printUsage;
+setWidth;
+setLeftPadding;
+getLongOptSeparator;
+printOptions;
+printHelp;
+getLeftPadding;
+getOptionComparator;
+setDescPadding;
+setLongOptSeparator;
+setOptionComparator;
+getNewLine;
+setOptPrefix;
+setSyntaxPrefix;
+getLongOptPrefix;
+getSyntaxPrefix -> printUsage [label=" defaultSyntaxPrefix", dir=none];
+getWidth -> printHelp [label=" defaultWidth", dir=none];
+printUsage -> getOptionComparator [label=" optionComparator", dir=none];
+getLongOptSeparator -> setLongOptSeparator [label=" longOptSeparator", dir=none];
+}

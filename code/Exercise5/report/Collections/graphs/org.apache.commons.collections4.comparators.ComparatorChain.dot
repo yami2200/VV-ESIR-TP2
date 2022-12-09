@@ -1,0 +1,38 @@
+digraph G {
+compare;
+setComparator;
+setForwardSort;
+size;
+hashCode;
+setReverseSort;
+isLocked;
+equals;
+addComparator;
+compare -> setComparator [label=" orderingBits, comparatorChain", dir=none];
+compare -> setForwardSort [label=" orderingBits", dir=none];
+compare -> size [label=" comparatorChain", dir=none];
+compare -> hashCode [label=" orderingBits, comparatorChain", dir=none];
+compare -> setReverseSort [label=" orderingBits", dir=none];
+compare -> isLocked [label=" isLocked", dir=none];
+compare -> equals [label=" orderingBits, comparatorChain", dir=none];
+compare -> addComparator [label=" orderingBits, comparatorChain", dir=none];
+setComparator -> setForwardSort [label=" orderingBits", dir=none];
+setComparator -> size [label=" comparatorChain", dir=none];
+setComparator -> hashCode [label=" orderingBits, comparatorChain", dir=none];
+setComparator -> setReverseSort [label=" orderingBits", dir=none];
+setComparator -> equals [label=" orderingBits, comparatorChain", dir=none];
+setComparator -> addComparator [label=" orderingBits, comparatorChain", dir=none];
+setForwardSort -> hashCode [label=" orderingBits", dir=none];
+setForwardSort -> setReverseSort [label=" orderingBits", dir=none];
+setForwardSort -> equals [label=" orderingBits", dir=none];
+setForwardSort -> addComparator [label=" orderingBits", dir=none];
+size -> hashCode [label=" comparatorChain", dir=none];
+size -> equals [label=" comparatorChain", dir=none];
+size -> addComparator [label=" comparatorChain", dir=none];
+hashCode -> setReverseSort [label=" orderingBits", dir=none];
+hashCode -> equals [label=" orderingBits, comparatorChain", dir=none];
+hashCode -> addComparator [label=" orderingBits, comparatorChain", dir=none];
+setReverseSort -> equals [label=" orderingBits", dir=none];
+setReverseSort -> addComparator [label=" orderingBits", dir=none];
+equals -> addComparator [label=" orderingBits, comparatorChain", dir=none];
+}

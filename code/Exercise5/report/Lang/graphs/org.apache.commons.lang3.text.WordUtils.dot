@@ -1,0 +1,9 @@
+digraph G {
+containsAllWords;
+uncapitalize;
+initials;
+capitalizeFully;
+wrap;
+capitalize;
+swapCase;
+}

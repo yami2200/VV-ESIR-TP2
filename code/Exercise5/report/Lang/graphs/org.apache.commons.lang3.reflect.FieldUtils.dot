@@ -1,0 +1,17 @@
+digraph G {
+getDeclaredField;
+getAllFields;
+getFieldsListWithAnnotation;
+writeDeclaredField;
+readDeclaredStaticField;
+getField;
+readDeclaredField;
+writeField;
+getAllFieldsList;
+writeStaticField;
+writeDeclaredStaticField;
+getFieldsWithAnnotation;
+readField;
+readStaticField;
+removeFinalModifier;
+}

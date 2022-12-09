@@ -1,0 +1,26 @@
+digraph G {
+asBiConsumer;
+rethrow;
+applyAsDouble;
+test;
+apply;
+asBiFunction;
+run;
+getAsDouble;
+asCallable;
+getAsInt;
+accept;
+call;
+asFunction;
+getAsLong;
+asRunnable;
+stream;
+asSupplier;
+getAsBoolean;
+get;
+tryWithResources;
+asPredicate;
+asConsumer;
+getAsShort;
+asBiPredicate;
+}

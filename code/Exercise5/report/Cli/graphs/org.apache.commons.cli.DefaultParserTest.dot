@@ -1,0 +1,12 @@
+digraph G {
+testLongOptionWithEqualsQuoteHandling;
+testShortOptionQuoteHandlingWithStrip;
+testBuilder;
+testShortOptionQuoteHandlingWithoutStrip;
+testLongOptionWithEqualsQuoteHandlingWithoutStrip;
+setUp;
+testLongOptionQuoteHandlingWithoutStrip;
+testShortOptionConcatenatedQuoteHandling;
+testLongOptionQuoteHandlingWithStrip;
+testLongOptionWithEqualsQuoteHandlingWithStrip;
+}

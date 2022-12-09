@@ -1,0 +1,12 @@
+digraph G {
+unmodifiableEntrySet;
+add;
+removeAll;
+iterator;
+addAll;
+clear;
+toArray;
+remove;
+removeIf;
+retainAll;
+}

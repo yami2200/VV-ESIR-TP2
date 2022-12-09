@@ -1,0 +1,12 @@
+digraph G {
+testRemoveAll_StringString;
+testRemovePattern_StringString;
+testRemoveFirst_StringPattern;
+testReplacePattern_StringStringString;
+testRemoveFirst_StringString;
+testRemoveAll_StringPattern;
+testReplaceAll_StringPatternString;
+testReplaceAll_StringStringString;
+testReplaceFirst_StringPatternString;
+testReplaceFirst_StringStringString;
+}

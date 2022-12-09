@@ -1,0 +1,13 @@
+digraph G {
+predicatedBag;
+synchronizedSortedBag;
+predicatedSortedBag;
+collectionBag;
+transformingSortedBag;
+unmodifiableSortedBag;
+unmodifiableBag;
+emptyBag;
+emptySortedBag;
+synchronizedBag;
+transformingBag;
+}

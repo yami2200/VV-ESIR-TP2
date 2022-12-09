@@ -1,0 +1,8 @@
+digraph G {
+bitsPerElement;
+lengthInBits;
+compare;
+isBitSet;
+isPrefix;
+bitIndex;
+}

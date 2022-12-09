@@ -1,0 +1,8 @@
+digraph G {
+getValue;
+get;
+clone;
+indexOf;
+remove;
+asList;
+}

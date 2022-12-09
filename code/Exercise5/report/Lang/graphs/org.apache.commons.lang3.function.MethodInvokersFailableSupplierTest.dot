@@ -1,0 +1,4 @@
+digraph G {
+testSupplierStatic;
+testSupplierToString;
+}

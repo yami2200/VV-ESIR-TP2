@@ -1,0 +1,27 @@
+digraph G {
+setBypassReflectionClasses;
+reflectionAppend;
+reflectionEquals;
+setTestRecursive;
+setReflectUpToClass;
+build;
+setExcludeFields;
+reset;
+appendSuper;
+isEquals;
+setTestTransients;
+append;
+setBypassReflectionClasses -> reflectionAppend [label=" bypassReflectionClasses", dir=none];
+setBypassReflectionClasses -> reflectionEquals [label=" bypassReflectionClasses", dir=none];
+reflectionAppend -> reflectionEquals [label=" bypassReflectionClasses, reflectUpToClass, isEquals", dir=none];
+reflectionAppend -> setReflectUpToClass [label=" reflectUpToClass", dir=none];
+reflectionAppend -> appendSuper [label=" isEquals", dir=none];
+reflectionAppend -> append [label=" isEquals", dir=none];
+reflectionEquals -> setTestRecursive [label=" testRecursive", dir=none];
+reflectionEquals -> setReflectUpToClass [label=" reflectUpToClass", dir=none];
+reflectionEquals -> setExcludeFields [label=" excludeFields", dir=none];
+reflectionEquals -> appendSuper [label=" isEquals", dir=none];
+reflectionEquals -> setTestTransients [label=" testTransients", dir=none];
+reflectionEquals -> append [label=" isEquals", dir=none];
+appendSuper -> append [label=" isEquals", dir=none];
+}

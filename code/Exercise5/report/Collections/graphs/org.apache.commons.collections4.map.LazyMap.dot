@@ -1,0 +1,5 @@
+digraph G {
+get;
+lazyMap;
+get -> lazyMap [label=" factory", dir=none];
+}

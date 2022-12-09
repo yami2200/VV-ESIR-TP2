@@ -1,0 +1,27 @@
+digraph G {
+testSubtract;
+testFactory_String_double;
+testFactory_double;
+testGets;
+testInvert;
+testPow;
+testAdd;
+testMultiply;
+testEquals;
+testConstants;
+testDivide;
+testFactory_String;
+testFactory_String_proper;
+testHashCode;
+testFactory_int_int;
+testToProperString;
+testNegate;
+testReducedFactory_int_int;
+testReduce;
+testToString;
+testAbs;
+testCompareTo;
+testFactory_int_int_int;
+testConversions;
+testFactory_String_improper;
+}

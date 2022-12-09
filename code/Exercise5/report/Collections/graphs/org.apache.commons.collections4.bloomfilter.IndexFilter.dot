@@ -1,0 +1,5 @@
+digraph G {
+test;
+create;
+test -> create [label=" consumer", dir=none];
+}

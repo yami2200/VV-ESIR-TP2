@@ -1,0 +1,10 @@
+digraph G {
+transform;
+getDefaultTransformer;
+switchTransformer;
+getTransformers;
+getPredicates;
+transform -> getDefaultTransformer [label=" iDefault", dir=none];
+transform -> getTransformers [label=" iTransformers", dir=none];
+transform -> getPredicates [label=" iPredicates", dir=none];
+}

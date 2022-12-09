@@ -1,0 +1,10 @@
+digraph G {
+testInputHasLessCharacters;
+testInputHasWrongDay;
+testInputHasWrongTimeZone;
+testInputHasMoreCharacters;
+testInputHasWrongCharacters;
+testInputHasPrecedingCharacters;
+testInputHasWhitespace;
+testInputHasWrongDay -> testInputHasWrongTimeZone [label=" NEW_YORK", dir=none];
+}

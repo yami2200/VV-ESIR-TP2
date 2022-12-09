@@ -1,0 +1,9 @@
+digraph G {
+offer;
+transformingQueue;
+poll;
+transformedQueue;
+remove;
+peek;
+element;
+}

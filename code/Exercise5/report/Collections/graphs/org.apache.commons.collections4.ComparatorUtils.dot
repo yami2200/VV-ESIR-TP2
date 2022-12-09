@@ -1,0 +1,26 @@
+digraph G {
+transformedComparator;
+min;
+reversedComparator;
+max;
+naturalComparator;
+booleanComparator;
+chainedComparator;
+nullHighComparator;
+nullLowComparator;
+transformedComparator -> min [label=" NATURAL_COMPARATOR", dir=none];
+transformedComparator -> max [label=" NATURAL_COMPARATOR", dir=none];
+transformedComparator -> naturalComparator [label=" NATURAL_COMPARATOR", dir=none];
+transformedComparator -> nullHighComparator [label=" NATURAL_COMPARATOR", dir=none];
+transformedComparator -> nullLowComparator [label=" NATURAL_COMPARATOR", dir=none];
+min -> max [label=" NATURAL_COMPARATOR", dir=none];
+min -> naturalComparator [label=" NATURAL_COMPARATOR", dir=none];
+min -> nullHighComparator [label=" NATURAL_COMPARATOR", dir=none];
+min -> nullLowComparator [label=" NATURAL_COMPARATOR", dir=none];
+max -> naturalComparator [label=" NATURAL_COMPARATOR", dir=none];
+max -> nullHighComparator [label=" NATURAL_COMPARATOR", dir=none];
+max -> nullLowComparator [label=" NATURAL_COMPARATOR", dir=none];
+naturalComparator -> nullHighComparator [label=" NATURAL_COMPARATOR", dir=none];
+naturalComparator -> nullLowComparator [label=" NATURAL_COMPARATOR", dir=none];
+nullHighComparator -> nullLowComparator [label=" NATURAL_COMPARATOR", dir=none];
+}

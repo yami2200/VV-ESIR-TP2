@@ -1,0 +1,33 @@
+digraph G {
+testNextIntRandomResult;
+testBoolean;
+testNextLongMinimalRange;
+testExtremeRangeFloat;
+testConstructor;
+testZeroLengthNextBytes;
+testLargeValueRangeLong;
+testNextDoubleRandomResult;
+testNextLongRandomResult;
+testExtremeRangeDouble;
+testNextBytesNegative;
+testExtremeRangeLong;
+testNextFloatRandomResult;
+testNextLongLowerGreaterUpper;
+testNextFloat;
+testNextDoubleNegative;
+testNextBytes;
+testExtremeRangeInt;
+testNextIntNegative;
+testNextFloatLowerGreaterUpper;
+testNextIntMinimalRange;
+testNextDouble;
+testNextLongNegative;
+testNextDoubleLowerGreaterUpper;
+testNextLong;
+testNextFloatNegative;
+testNextIntLowerGreaterUpper;
+testNextDoubleMinimalRange;
+testNextFloatMinimalRange;
+testNextInt;
+testNextDoubleMinimalRange -> testNextFloatMinimalRange [label=" DELTA", dir=none];
+}

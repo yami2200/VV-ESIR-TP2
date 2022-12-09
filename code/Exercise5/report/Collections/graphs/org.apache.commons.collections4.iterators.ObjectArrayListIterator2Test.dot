@@ -1,0 +1,7 @@
+digraph G {
+makeObject;
+supportsAdd;
+supportsRemove;
+makeEmptyIterator;
+makeArrayListIterator;
+}

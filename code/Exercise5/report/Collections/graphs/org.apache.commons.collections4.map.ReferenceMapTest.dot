@@ -1,0 +1,14 @@
+digraph G {
+testDataSizeAfterSerialization;
+suite;
+testCustomPurge;
+testIteratorLastEntryCanBeRemovedAfterHasNext;
+makeObject;
+isAllowNullKey;
+isAllowNullValue;
+getCompatibilityVersion;
+testPurgeValues;
+testNullHandling;
+buildRefMap;
+testPurgeValues -> buildRefMap [label=" keyReference, valueReference", dir=none];
+}

@@ -1,0 +1,12 @@
+digraph G {
+testEmptyListSort;
+makeObject;
+supportsFullCollections;
+testRandomListSort;
+testComparatorIsSerializable;
+supportsEmptyCollections;
+getCanonicalComparatorName;
+testReverseListSort;
+testComparatorCompatibility;
+getComparableObjectsOrdered;
+}

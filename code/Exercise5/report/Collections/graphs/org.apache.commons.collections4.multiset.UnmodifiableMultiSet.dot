@@ -1,0 +1,14 @@
+digraph G {
+add;
+iterator;
+removeAll;
+addAll;
+entrySet;
+unmodifiableMultiSet;
+clear;
+uniqueSet;
+remove;
+setCount;
+removeIf;
+retainAll;
+}

@@ -1,0 +1,6 @@
+digraph G {
+compare;
+comparableComparator;
+hashCode;
+equals;
+}

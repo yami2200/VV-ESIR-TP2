@@ -1,0 +1,15 @@
+digraph G {
+keys;
+asMap;
+removeMapping;
+values;
+clear;
+remove;
+put;
+unmodifiableMultiValuedMap;
+mapIterator;
+entries;
+get;
+putAll;
+keySet;
+}

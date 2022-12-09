@@ -1,0 +1,6 @@
+digraph G {
+testRaw;
+testTyped;
+testBasic;
+testEquals;
+}

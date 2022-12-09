@@ -1,0 +1,16 @@
+digraph G {
+getNumberOfDiffs;
+iterator;
+getRight;
+getDiffs;
+toString;
+getLeft;
+getToStringStyle;
+getNumberOfDiffs -> iterator [label=" diffList", dir=none];
+getNumberOfDiffs -> getDiffs [label=" diffList", dir=none];
+getNumberOfDiffs -> toString [label=" diffList", dir=none];
+iterator -> getDiffs [label=" diffList", dir=none];
+iterator -> toString [label=" diffList", dir=none];
+getDiffs -> toString [label=" diffList", dir=none];
+toString -> getToStringStyle [label=" style", dir=none];
+}

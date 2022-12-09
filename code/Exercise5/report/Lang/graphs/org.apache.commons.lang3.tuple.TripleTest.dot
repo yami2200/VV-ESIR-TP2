@@ -1,0 +1,15 @@
+digraph G {
+testComparable4;
+testFormattable_simple;
+testEmptyArrayLength;
+testToStringCustom;
+testTripleOf;
+testComparable3;
+testEmptyArrayGenerics;
+testComparable2;
+testComparable1;
+testCompatibilityBetweenTriples;
+testFormattable_padded;
+testToString;
+testOfNonNull;
+}

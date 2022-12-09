@@ -1,0 +1,15 @@
+digraph G {
+testSingletonIteratorRemove;
+makeObject;
+testReset;
+supportsRemove;
+makeEmptyIterator;
+supportsEmptyIterator;
+testIterator;
+makeObject -> testReset [label=" testValue", dir=none];
+makeObject -> makeEmptyIterator [label=" testValue", dir=none];
+makeObject -> testIterator [label=" testValue", dir=none];
+testReset -> makeEmptyIterator [label=" testValue", dir=none];
+testReset -> testIterator [label=" testValue", dir=none];
+makeEmptyIterator -> testIterator [label=" testValue", dir=none];
+}

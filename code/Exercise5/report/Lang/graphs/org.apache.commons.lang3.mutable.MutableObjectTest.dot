@@ -1,0 +1,7 @@
+digraph G {
+testGetSet;
+testToString;
+testConstructors;
+testHashCode;
+testEquals;
+}

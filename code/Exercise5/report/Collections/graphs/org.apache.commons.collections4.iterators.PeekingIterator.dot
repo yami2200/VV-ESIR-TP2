@@ -1,0 +1,19 @@
+digraph G {
+next;
+hasNext;
+peekingIterator;
+remove;
+peek;
+element;
+next -> hasNext [label=" iterator, exhausted, slotFilled", dir=none];
+next -> peekingIterator [label=" iterator", dir=none];
+next -> remove [label=" iterator, slotFilled", dir=none];
+next -> peek [label=" exhausted, slot", dir=none];
+next -> element [label=" exhausted, slot", dir=none];
+hasNext -> peekingIterator [label=" iterator", dir=none];
+hasNext -> remove [label=" iterator, slotFilled", dir=none];
+hasNext -> peek [label=" exhausted", dir=none];
+hasNext -> element [label=" exhausted", dir=none];
+peekingIterator -> remove [label=" iterator", dir=none];
+peek -> element [label=" exhausted, slot", dir=none];
+}

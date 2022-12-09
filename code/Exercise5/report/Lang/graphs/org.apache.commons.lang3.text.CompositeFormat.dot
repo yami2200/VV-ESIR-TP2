@@ -1,0 +1,9 @@
+digraph G {
+reformat;
+getParser;
+format;
+getFormatter;
+parseObject;
+reformat -> format [label=" formatter", dir=none];
+reformat -> parseObject [label=" parser", dir=none];
+}

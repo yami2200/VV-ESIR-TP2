@@ -1,0 +1,32 @@
+digraph G {
+getArch;
+isX86;
+isAarch64;
+isIA64;
+isPPC;
+getType;
+is32Bit;
+is64Bit;
+toString;
+getArch -> is32Bit [label=" arch", dir=none];
+getArch -> is64Bit [label=" arch", dir=none];
+getArch -> toString [label=" arch", dir=none];
+isX86 -> isAarch64 [label=" type", dir=none];
+isX86 -> isIA64 [label=" type", dir=none];
+isX86 -> isPPC [label=" type", dir=none];
+isX86 -> getType [label=" type", dir=none];
+isX86 -> toString [label=" type", dir=none];
+isAarch64 -> isIA64 [label=" type", dir=none];
+isAarch64 -> isPPC [label=" type", dir=none];
+isAarch64 -> getType [label=" type", dir=none];
+isAarch64 -> toString [label=" type", dir=none];
+isIA64 -> isPPC [label=" type", dir=none];
+isIA64 -> getType [label=" type", dir=none];
+isIA64 -> toString [label=" type", dir=none];
+isPPC -> getType [label=" type", dir=none];
+isPPC -> toString [label=" type", dir=none];
+getType -> toString [label=" type", dir=none];
+is32Bit -> is64Bit [label=" arch", dir=none];
+is32Bit -> toString [label=" arch", dir=none];
+is64Bit -> toString [label=" arch", dir=none];
+}

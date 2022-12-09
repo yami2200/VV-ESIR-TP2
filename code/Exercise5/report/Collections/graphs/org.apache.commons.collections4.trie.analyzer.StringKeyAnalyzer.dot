@@ -1,0 +1,17 @@
+digraph G {
+bitsPerElement;
+lengthInBits;
+isBitSet;
+isPrefix;
+bitIndex;
+bitsPerElement -> lengthInBits [label=" LENGTH", dir=none];
+bitsPerElement -> isBitSet [label=" LENGTH", dir=none];
+bitsPerElement -> isPrefix [label=" LENGTH", dir=none];
+bitsPerElement -> bitIndex [label=" LENGTH", dir=none];
+lengthInBits -> isBitSet [label=" LENGTH", dir=none];
+lengthInBits -> isPrefix [label=" LENGTH", dir=none];
+lengthInBits -> bitIndex [label=" LENGTH", dir=none];
+isBitSet -> isPrefix [label=" LENGTH", dir=none];
+isBitSet -> bitIndex [label=" LENGTH", dir=none];
+isPrefix -> bitIndex [label=" LENGTH", dir=none];
+}

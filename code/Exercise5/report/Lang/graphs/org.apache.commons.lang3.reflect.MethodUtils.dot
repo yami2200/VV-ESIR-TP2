@@ -1,0 +1,19 @@
+digraph G {
+invokeStaticMethod;
+getMatchingAccessibleMethod;
+getAccessibleMethod;
+getMatchingMethod;
+getOverrideHierarchy;
+getAnnotation;
+getMethodsWithAnnotation;
+getMethodsListWithAnnotation;
+invokeExactMethod;
+invokeExactStaticMethod;
+invokeMethod;
+invokeStaticMethod -> getMatchingAccessibleMethod [label=" METHOD_BY_SIGNATURE", dir=none];
+invokeStaticMethod -> getOverrideHierarchy [label=" METHOD_BY_SIGNATURE", dir=none];
+invokeStaticMethod -> getAnnotation [label=" METHOD_BY_SIGNATURE", dir=none];
+getMatchingAccessibleMethod -> getOverrideHierarchy [label=" METHOD_BY_SIGNATURE", dir=none];
+getMatchingAccessibleMethod -> getAnnotation [label=" METHOD_BY_SIGNATURE", dir=none];
+getOverrideHierarchy -> getAnnotation [label=" METHOD_BY_SIGNATURE", dir=none];
+}

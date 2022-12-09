@@ -1,0 +1,18 @@
+digraph G {
+getKey;
+size;
+hashCode;
+equals;
+toString;
+getKeys;
+getKey -> size [label=" keys", dir=none];
+getKey -> equals [label=" keys", dir=none];
+getKey -> toString [label=" keys", dir=none];
+getKey -> getKeys [label=" keys", dir=none];
+size -> equals [label=" keys", dir=none];
+size -> toString [label=" keys", dir=none];
+size -> getKeys [label=" keys", dir=none];
+equals -> toString [label=" keys", dir=none];
+equals -> getKeys [label=" keys", dir=none];
+toString -> getKeys [label=" keys", dir=none];
+}

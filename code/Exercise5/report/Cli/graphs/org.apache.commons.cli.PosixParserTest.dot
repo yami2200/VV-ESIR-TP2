@@ -1,0 +1,12 @@
+digraph G {
+testLongWithEqualSingleDash;
+testLongWithUnexpectedArgument1;
+testAmbiguousLongWithoutEqualSingleDash;
+testDoubleDash2;
+testAmbiguousPartialLongOption4;
+testShortWithEqual;
+setUp;
+testUnambiguousPartialLongOption4;
+testNegativeOption;
+testLongWithoutEqualSingleDash;
+}

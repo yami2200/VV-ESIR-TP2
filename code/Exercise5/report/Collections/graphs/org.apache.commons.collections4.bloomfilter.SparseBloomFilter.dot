@@ -1,0 +1,24 @@
+digraph G {
+asBitMapArray;
+characteristics;
+contains;
+merge;
+clear;
+getShape;
+forEachIndex;
+copy;
+cardinality;
+forEachBitMap;
+asBitMapArray -> clear [label=" indices", dir=none];
+asBitMapArray -> getShape [label=" shape", dir=none];
+asBitMapArray -> forEachIndex [label=" indices", dir=none];
+asBitMapArray -> cardinality [label=" indices", dir=none];
+asBitMapArray -> forEachBitMap [label=" indices, shape", dir=none];
+clear -> forEachIndex [label=" indices", dir=none];
+clear -> cardinality [label=" indices", dir=none];
+clear -> forEachBitMap [label=" indices", dir=none];
+getShape -> forEachBitMap [label=" shape", dir=none];
+forEachIndex -> cardinality [label=" indices", dir=none];
+forEachIndex -> forEachBitMap [label=" indices", dir=none];
+cardinality -> forEachBitMap [label=" indices", dir=none];
+}

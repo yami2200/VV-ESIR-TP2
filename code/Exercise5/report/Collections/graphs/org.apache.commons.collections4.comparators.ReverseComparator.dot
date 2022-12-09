@@ -1,0 +1,8 @@
+digraph G {
+compare;
+hashCode;
+equals;
+compare -> hashCode [label=" comparator", dir=none];
+compare -> equals [label=" comparator", dir=none];
+hashCode -> equals [label=" comparator", dir=none];
+}

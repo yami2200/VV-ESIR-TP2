@@ -1,0 +1,16 @@
+digraph G {
+testSerializeDeserializeThenCompare;
+testObjectHashCodeEqualsContract;
+testObjectHashCodeEqualsSelfHashCode;
+testObjectEqualsSelf;
+makeObject;
+testCanonicalEmptyCollectionExists;
+supportsEmptyCollections;
+getCompatibilityVersion;
+testCanonicalFullCollectionExists;
+isTestSerialization;
+testEqualsNull;
+supportsFullCollections;
+isEqualsCheckable;
+testSimpleSerialization;
+}

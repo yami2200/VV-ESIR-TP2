@@ -1,0 +1,23 @@
+digraph G {
+formatDurationHMS;
+formatPeriodISO;
+formatDuration;
+formatDurationISO;
+formatDurationWords;
+formatPeriod;
+formatDurationHMS -> formatPeriodISO [label=" s, d, H, m", dir=none];
+formatDurationHMS -> formatDuration [label=" s, d, H, m", dir=none];
+formatDurationHMS -> formatDurationISO [label=" s, d, H, m", dir=none];
+formatDurationHMS -> formatDurationWords [label=" s, d, H, m", dir=none];
+formatDurationHMS -> formatPeriod [label=" s, d, H, m", dir=none];
+formatPeriodISO -> formatDuration [label=" s, d, H, m", dir=none];
+formatPeriodISO -> formatDurationISO [label=" ISO_EXTENDED_FORMAT_PATTERN, s, d, H, m", dir=none];
+formatPeriodISO -> formatDurationWords [label=" s, d, H, m", dir=none];
+formatPeriodISO -> formatPeriod [label=" s, d, H, y, M, m", dir=none];
+formatDuration -> formatDurationISO [label=" s, d, H, m", dir=none];
+formatDuration -> formatDurationWords [label=" s, d, H, m", dir=none];
+formatDuration -> formatPeriod [label=" s, d, H, m", dir=none];
+formatDurationISO -> formatDurationWords [label=" s, d, H, m", dir=none];
+formatDurationISO -> formatPeriod [label=" s, d, H, m", dir=none];
+formatDurationWords -> formatPeriod [label=" s, d, H, m", dir=none];
+}

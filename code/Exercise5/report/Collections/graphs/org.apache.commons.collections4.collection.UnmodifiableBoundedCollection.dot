@@ -1,0 +1,13 @@
+digraph G {
+add;
+iterator;
+removeAll;
+unmodifiableBoundedCollection;
+addAll;
+clear;
+maxSize;
+isFull;
+remove;
+removeIf;
+retainAll;
+}

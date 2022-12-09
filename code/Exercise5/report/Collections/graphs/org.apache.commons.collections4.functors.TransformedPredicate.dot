@@ -1,0 +1,8 @@
+digraph G {
+getTransformer;
+transformedPredicate;
+evaluate;
+getPredicates;
+getTransformer -> evaluate [label=" iTransformer", dir=none];
+evaluate -> getPredicates [label=" iPredicate", dir=none];
+}

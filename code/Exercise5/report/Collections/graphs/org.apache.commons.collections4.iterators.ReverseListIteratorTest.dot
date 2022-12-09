@@ -1,0 +1,14 @@
+digraph G {
+testWalkForwardAndBack;
+testEmptyListIteratorIsIndeedEmpty;
+makeObject;
+testReverse;
+testReset;
+makeEmptyIterator;
+testWalkForwardAndBack -> makeObject [label=" testArray", dir=none];
+testWalkForwardAndBack -> testReverse [label=" testArray", dir=none];
+testWalkForwardAndBack -> testReset [label=" testArray", dir=none];
+makeObject -> testReverse [label=" testArray", dir=none];
+makeObject -> testReset [label=" testArray", dir=none];
+testReverse -> testReset [label=" testArray", dir=none];
+}

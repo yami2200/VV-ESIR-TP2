@@ -1,0 +1,15 @@
+digraph G {
+testEqualsAndHashCode;
+testToString;
+testAccessorsAndMutators;
+testConstructors;
+makeMapEntry;
+testSelfReferenceHandling;
+makeKnownMapEntry;
+testEqualsAndHashCode -> testToString [label=" value, key", dir=none];
+testEqualsAndHashCode -> testAccessorsAndMutators [label=" value, key", dir=none];
+testEqualsAndHashCode -> makeKnownMapEntry [label=" value, key", dir=none];
+testToString -> testAccessorsAndMutators [label=" value, key", dir=none];
+testToString -> makeKnownMapEntry [label=" value, key", dir=none];
+testAccessorsAndMutators -> makeKnownMapEntry [label=" value, key", dir=none];
+}

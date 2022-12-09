@@ -1,0 +1,7 @@
+digraph G {
+next;
+hasNext;
+remove;
+next -> hasNext [label=" hasNext", dir=none];
+next -> remove [label=" lastUsedIterator", dir=none];
+}

@@ -1,0 +1,12 @@
+digraph G {
+testTransformedCollection_decorateTransform;
+getOtherElements;
+makeFullCollection;
+testTransformedCollection;
+makeObject;
+makeConfirmedCollection;
+getFullElements;
+getCompatibilityVersion;
+makeConfirmedFullCollection;
+makeFullCollection -> makeObject [label=" NOOP_TRANSFORMER", dir=none];
+}

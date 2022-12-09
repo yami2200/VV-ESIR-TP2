@@ -1,0 +1,6 @@
+digraph G {
+nullIsFalsePredicate;
+evaluate;
+getPredicates;
+evaluate -> getPredicates [label=" iPredicate", dir=none];
+}

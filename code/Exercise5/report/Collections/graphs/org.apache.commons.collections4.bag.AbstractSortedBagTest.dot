@@ -1,0 +1,12 @@
+digraph G {
+getCollection;
+resetFull;
+makeFullCollection;
+makeObject;
+getOtherNonNullElements;
+verify;
+makeConfirmedCollection;
+getFullNonNullElements;
+isNullSupported;
+resetEmpty;
+}

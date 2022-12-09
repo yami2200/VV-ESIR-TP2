@@ -1,0 +1,12 @@
+digraph G {
+getYear;
+getDayOfYear;
+getDayOfMonth;
+getMonth;
+getYear -> getDayOfYear [label=" calendar", dir=none];
+getYear -> getDayOfMonth [label=" calendar", dir=none];
+getYear -> getMonth [label=" calendar", dir=none];
+getDayOfYear -> getDayOfMonth [label=" calendar", dir=none];
+getDayOfYear -> getMonth [label=" calendar", dir=none];
+getDayOfMonth -> getMonth [label=" calendar", dir=none];
+}

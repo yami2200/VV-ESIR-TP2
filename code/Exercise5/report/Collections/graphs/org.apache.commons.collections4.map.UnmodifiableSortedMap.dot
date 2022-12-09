@@ -1,0 +1,16 @@
+digraph G {
+entrySet;
+values;
+subMap;
+clear;
+put;
+remove;
+comparator;
+unmodifiableSortedMap;
+firstKey;
+putAll;
+lastKey;
+headMap;
+keySet;
+tailMap;
+}

@@ -1,0 +1,12 @@
+digraph G {
+next;
+size;
+addIterator;
+isLocked;
+hasNext;
+remove;
+next -> hasNext [label=" lastUsedIterator, currentIterator", dir=none];
+next -> remove [label=" lastUsedIterator, currentIterator", dir=none];
+size -> addIterator [label=" iteratorChain", dir=none];
+hasNext -> remove [label=" lastUsedIterator, currentIterator", dir=none];
+}

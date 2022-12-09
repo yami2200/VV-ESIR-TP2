@@ -1,0 +1,6 @@
+digraph G {
+constantFactory;
+getConstant;
+create;
+getConstant -> create [label=" iConstant", dir=none];
+}

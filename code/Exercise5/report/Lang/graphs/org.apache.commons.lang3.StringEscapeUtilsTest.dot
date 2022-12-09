@@ -1,0 +1,35 @@
+digraph G {
+testUnescapeXmlSupplementaryCharacters;
+testEscapeXmlSupplementaryCharacters;
+testUnescapeHexCharsHtml;
+testEscapeEcmaScript;
+testLang911;
+testUnescapeJava;
+testLang313;
+testUnescapeCsvString;
+testConstructor;
+testUnescapeUnknownEntity;
+testUnescapeHtml4;
+testEscapeCsvIllegalStateException;
+testUnescapeJson;
+testEscapeXml10;
+testEscapeHiragana;
+testEscapeXml11;
+testEscapeXml;
+testUnescapeCsvWriter;
+testEscapeCsvString;
+testLang708;
+testUnescapeEcmaScript;
+testEscapeHtmlHighUnicode;
+testEscapeJavaWithSlash;
+testEscapeCsvWriter;
+testLang720;
+testUnescapeCsvIllegalStateException;
+testEscapeJson;
+testEscapeXmlAllCharacters;
+testEscapeHtml;
+testEscapeHtmlVersions;
+testStandaloneAmphersand;
+testEscapeJava;
+testUnescapeHtml4 -> testEscapeHtml [label=" HTML_ESCAPES", dir=none];
+}

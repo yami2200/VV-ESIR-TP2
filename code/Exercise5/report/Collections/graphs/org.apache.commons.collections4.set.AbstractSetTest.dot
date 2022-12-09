@@ -1,0 +1,12 @@
+digraph G {
+testSetEquals;
+getCollection;
+makeFullCollection;
+makeObject;
+getConfirmed;
+isEqualsCheckable;
+verify;
+makeConfirmedCollection;
+testSetHashCode;
+makeConfirmedFullCollection;
+}

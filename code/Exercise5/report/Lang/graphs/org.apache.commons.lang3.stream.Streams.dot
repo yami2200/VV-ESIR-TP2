@@ -1,0 +1,8 @@
+digraph G {
+instancesOf;
+stream;
+of;
+failableStream;
+toArray;
+nonNull;
+}

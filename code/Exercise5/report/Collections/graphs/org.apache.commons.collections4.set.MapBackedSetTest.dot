@@ -1,0 +1,4 @@
+digraph G {
+makeObject;
+getCompatibilityVersion;
+}

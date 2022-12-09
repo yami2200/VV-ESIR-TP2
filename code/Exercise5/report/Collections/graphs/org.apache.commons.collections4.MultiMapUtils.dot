@@ -1,0 +1,14 @@
+digraph G {
+unmodifiableMultiValuedMap;
+getValuesAsSet;
+getCollection;
+getValuesAsBag;
+isEmpty;
+newListValuedHashMap;
+transformedMultiValuedMap;
+emptyMultiValuedMap;
+getValuesAsList;
+emptyIfNull;
+newSetValuedHashMap;
+emptyMultiValuedMap -> emptyIfNull [label=" EMPTY_MULTI_VALUED_MAP", dir=none];
+}

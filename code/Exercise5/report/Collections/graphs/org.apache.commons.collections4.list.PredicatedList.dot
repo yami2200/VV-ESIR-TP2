@@ -1,0 +1,14 @@
+digraph G {
+add;
+lastIndexOf;
+subList;
+set;
+addAll;
+hashCode;
+equals;
+get;
+listIterator;
+predicatedList;
+indexOf;
+remove;
+}

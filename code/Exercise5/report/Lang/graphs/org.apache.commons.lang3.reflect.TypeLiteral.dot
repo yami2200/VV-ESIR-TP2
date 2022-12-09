@@ -1,0 +1,9 @@
+digraph G {
+getType;
+hashCode;
+equals;
+toString;
+getType -> hashCode [label=" value", dir=none];
+getType -> equals [label=" value", dir=none];
+hashCode -> equals [label=" value", dir=none];
+}
